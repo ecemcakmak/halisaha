@@ -46,10 +46,19 @@
                 ul{
                     @include flex;
                     list-style: none;
+                  
                     li{
-                        padding: 10px 20px;
+                        position: relative;
+                        padding: 10px 40px;
                         ul{
+                            position: absolute;
+                            top: 20px;
+                            padding-left: 0px;
                             display: none;
+                            li{
+                                padding: 10px 10px;
+                                border: none;
+                            }
                         }
                         &:hover{
                             ul{

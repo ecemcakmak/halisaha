@@ -1364,10 +1364,18 @@ template {
     list-style: none;
   }
   .header__navbar nav ul li {
-    padding: 10px 20px;
+    position: relative;
+    padding: 10px 40px;
   }
   .header__navbar nav ul li ul {
+    position: absolute;
+    top: 20px;
+    padding-left: 0px;
     display: none;
+  }
+  .header__navbar nav ul li ul li {
+    padding: 10px 10px;
+    border: none;
   }
   .header__navbar nav ul li:hover ul {
     display: block;
