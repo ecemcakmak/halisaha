@@ -783,6 +783,24 @@
   }
 }
 
+.button__filled, .button__blank {
+  background-color: #227f00;
+  padding: 10px 40px;
+  border: 1px solid #ffffff;
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.button__blank {
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  color: #969696;
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1137,6 +1155,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #e4e4e4;
   width: 100%;
   height: 40px;
 }
@@ -1166,5 +1185,92 @@ template {
   color: #969696;
   font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+
+.header__mid__container {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 135px;
+}
+
+.header__search {
+  width: 700px;
+  position: relative;
+}
+
+.header__search input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e4e4e4;
+  padding: 5px 95px 5px 10px;
+  border-radius: 5px;
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #5e5e5e;
+  outline: none;
+}
+
+.header__search input::-webkit-input-placeholder {
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #969696;
+}
+
+.header__search input:-ms-input-placeholder {
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #969696;
+}
+
+.header__search input::-ms-input-placeholder {
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #969696;
+}
+
+.header__search input::placeholder {
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #969696;
+}
+
+.header__search__icon {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: 0;
+  background-color: #f3f3f3;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #e4e4e4;
+  width: 80px;
+  height: 45px;
+}
+
+.header__search__icon span {
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+.header__buttons a {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=main.css.map */

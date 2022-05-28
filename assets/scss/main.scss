@@ -10,10 +10,16 @@
 "base/breadcrumb",
 "base/customCol";
 
+@import "components/button/buttonFilled",
+"components/button/buttonBlank";
+
 @import "vendor/normalize/normalize";
 
 @import "layout/header/header",
 "layout/header/headerTop/headerTop",
 "layout/header/headerTop/headerTopContact",
-"layout/header/headerTop/headerTopSocial";
+"layout/header/headerTop/headerTopSocial",
+"layout/header/headerMid/headerMid",
+"layout/header/headerMid/headerSearch",
+"layout/header/headerMid/headerButtons";
  

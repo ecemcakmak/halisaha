@@ -1,0 +1,8 @@
+.header__mid{
+    &__container{
+        @include flex;
+        @include justify-content(space-between);
+        align-items: center;
+        height: 135px;
+    }
+}

@@ -1,0 +1,7 @@
+.button__blank{
+    @extend .button__filled;
+    border: 1px solid $color-light-border;;
+    background-color: $color-white;
+    color: $color-light-text;
+    @include font-IzmirSemiBold(12px);
+}
