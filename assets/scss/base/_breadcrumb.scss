@@ -1,0 +1,22 @@
+.breadcrumb {
+    padding: 10px 0px;
+    list-style: none;
+    background: none;
+    li+li::before{
+        padding: 10px;
+        @include font-IzmirExtraBold(14px);
+        color: red;
+        content: ">";
+    }
+    li{
+        a{
+            @include font-IzmirExtraBold(14px);
+            color: red;
+            text-decoration: none;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+  }
+
