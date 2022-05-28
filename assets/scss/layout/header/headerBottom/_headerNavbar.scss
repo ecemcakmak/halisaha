@@ -1,0 +1,72 @@
+.header__navbar{
+    @include flex;
+    width: 100%;
+    position: relative;
+    nav{
+        width: 100%;
+        @include flex;
+        @include justify-content(center);
+        align-items: center;
+        position: absolute;
+        top: 0;
+        ul{
+            display: none;
+            
+        }
+        #checkbox{
+            position: absolute;
+            z-index: 99;
+            opacity: 0;
+        }
+        #checkbox:checked ~ nav ul {
+            display: block;
+            @include flex;
+            list-style: none;
+            li{
+                padding: 10px 20px;
+                ul{
+                    display: none;
+                }
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+        @include mq(min, $xl){
+            nav{
+                width: 100%;
+                @include flex;
+                @include justify-content(center);
+                align-items: center;
+                position: absolute;
+                top: 0;
+                ul{
+                    @include flex;
+                    list-style: none;
+                    li{
+                        padding: 10px 20px;
+                        ul{
+                            display: none;
+                        }
+                        &:hover{
+                            ul{
+                                display: block;
+                            }
+                        }
+                    }
+                    
+                }
+                #checkbox{
+                    display: none;
+                }
+                label{
+                    display: none;
+                }
+            }
+
+        }
+  
+}

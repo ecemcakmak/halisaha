@@ -1,4 +1,5 @@
 .header__mid{
+    border-bottom: 1px solid $color-light-border;
     &__container{
         @include flex;
         @include justify-content(space-between);
