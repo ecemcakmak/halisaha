@@ -1134,8 +1134,37 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: red;
-  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: 40px;
+}
+
+.header__contact {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__contact a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.header__contact a strong {
+  color: #5e5e5e;
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.header__contact a span {
+  color: #969696;
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */

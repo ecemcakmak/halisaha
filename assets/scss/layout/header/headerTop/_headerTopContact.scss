@@ -1,3 +1,18 @@
-.header__contact{
+.header__contact {
+    @include flex;
+    align-items: center;
 
+    a {
+        text-decoration: none;
+        margin-right: 30px;
+        strong{
+            color: $color-dark-text;
+            @include font-IzmirMedium(13px);
+        }
+        span{
+            color: $color-light-text;
+            @include font-IzmirMedium(14px);
+        }
+        
+    }
 }
