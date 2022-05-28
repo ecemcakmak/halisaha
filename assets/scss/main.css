@@ -1384,6 +1384,10 @@ template {
   }
   .header__navbar nav ul li a {
     cursor: pointer;
+    text-decoration: none;
+    color: #5e5e5e;
+    font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+    font-size: 16px;
   }
   .header__navbar nav ul li ul {
     position: absolute;
@@ -1404,5 +1408,23 @@ template {
   .header__navbar nav label {
     display: none;
   }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.content img {
+  max-width: 100vw;
+  height: 100%;
+  z-index: -9;
 }
 /*# sourceMappingURL=main.css.map */

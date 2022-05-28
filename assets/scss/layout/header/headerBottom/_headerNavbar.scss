@@ -56,6 +56,9 @@
                         border-top: 0px;
                         a{
                             cursor: pointer;
+                            text-decoration: none;
+                            color: $color-dark-text;
+                            @include font-IzmirSemiBold(16px);
                         }
                         ul{
                             position: absolute;
