@@ -16,9 +16,8 @@
             z-index: 99;
             opacity: 0;
         }
-        #checkbox:checked ~ nav ul {
-            display: block;
-            @include flex;
+        #checkbox:checked ~  ul {
+            display: block;           
             list-style: none;
             li{
                 padding: 10px 20px;

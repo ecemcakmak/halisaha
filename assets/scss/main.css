@@ -1323,24 +1323,20 @@ template {
   opacity: 0;
 }
 
-.header__navbar nav #checkbox:checked ~ nav ul {
+.header__navbar nav #checkbox:checked ~ ul {
   display: block;
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
 }
 
-.header__navbar nav #checkbox:checked ~ nav ul li {
+.header__navbar nav #checkbox:checked ~ ul li {
   padding: 10px 20px;
 }
 
-.header__navbar nav #checkbox:checked ~ nav ul li ul {
+.header__navbar nav #checkbox:checked ~ ul li ul {
   display: none;
 }
 
-.header__navbar nav #checkbox:checked ~ nav ul li:hover ul {
+.header__navbar nav #checkbox:checked ~ ul li:hover ul {
   display: block;
 }
 
