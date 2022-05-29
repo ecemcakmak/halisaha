@@ -1430,9 +1430,19 @@ template {
 }
 
 .footer {
+  position: relative;
   background-color: #e4e4e4;
   width: 100%;
-  height: 290px;
+  height: 300px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    height: auto;
+    padding-bottom: 90px;
+    text-align: center;
+  }
 }
 
 .footer__col {
@@ -1464,5 +1474,30 @@ template {
   text-decoration: none;
   font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #424243;
+}
+
+.footer__copyright span {
+  color: #ffffff;
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
