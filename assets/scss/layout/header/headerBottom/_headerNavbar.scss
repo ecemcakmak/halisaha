@@ -9,6 +9,34 @@
         align-items: center;
         ul{
             display: none;
+            li{
+                position: relative;
+                @include flex;
+                @include justify-content(center);
+                align-items: center;
+ 
+                a{
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $color-dark-text;
+                    @include font-IzmirSemiBold(16px);
+                }
+                ul{
+                    position: absolute;
+                    top: 30px;
+                    padding-left: 0px;
+                    display: none;
+                    li{
+                        padding: 10px 10px;
+                        border: none;
+                    }
+                }
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                }
+            }
             
         }
         #checkbox{
@@ -30,6 +58,9 @@
                     }
                 }
             }
+        }
+        @include mq(max, 1300px){
+            flex-direction: column;
         }
     }
         @include mq(min, $xl){

@@ -1317,6 +1317,44 @@ template {
   display: none;
 }
 
+.header__navbar nav ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__navbar nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5e5e5e;
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.header__navbar nav ul li ul {
+  position: absolute;
+  top: 30px;
+  padding-left: 0px;
+  display: none;
+}
+
+.header__navbar nav ul li ul li {
+  padding: 10px 10px;
+  border: none;
+}
+
+.header__navbar nav ul li:hover ul {
+  display: block;
+}
+
 .header__navbar nav #checkbox {
   position: absolute;
   z-index: 99;
@@ -1338,6 +1376,15 @@ template {
 
 .header__navbar nav #checkbox:checked ~ ul li:hover ul {
   display: block;
+}
+
+@media (max-width: 1300px) {
+  .header__navbar nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (min-width: 1201px) {
