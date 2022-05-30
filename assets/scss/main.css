@@ -1482,6 +1482,10 @@ template {
   z-index: -9;
 }
 
+.content__slider {
+  width: 100%;
+}
+
 .footer {
   position: relative;
   background-color: #e4e4e4;
