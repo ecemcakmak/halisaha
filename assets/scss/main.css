@@ -1151,6 +1151,8 @@ template {
 }
 
 .header {
+  background-color: #ffffff;
+  z-index: 99;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -1350,6 +1352,7 @@ template {
   top: 30px;
   padding-left: 0px;
   display: none;
+  background-color: #ffffff;
 }
 
 .header__navbar nav ul li ul li {
@@ -1484,6 +1487,31 @@ template {
 
 .content__slider {
   width: 100%;
+}
+
+.content__slider .owl-item .item {
+  position: relative;
+}
+
+.content__slider .owl-item .item .container__slider {
+  max-width: 750px;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  padding-left: 150px;
+}
+
+.content__slider .owl-item .item .container__slider h3 {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: 'Izmir-ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+.content__slider .owl-item .item .container__slider span {
+  color: #ffffff;
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 .footer {
