@@ -1,5 +1,10 @@
 .header__buttons{
+    @include flex;
     a{
         margin-left: 30px;
+        img{
+            margin-right: 10px;
+            max-width: 25px;
+        }
     }
 }
