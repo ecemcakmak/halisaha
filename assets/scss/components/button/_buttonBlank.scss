@@ -4,4 +4,9 @@
     background-color: $color-white;
     color: $color-light-text;
     @include font-IzmirSemiBold(12px);
+    &.brand{
+      color: $color-brand;   
+      @include font-IzmirSemiBold(18px);
+      width: 275px;
+    }
 }

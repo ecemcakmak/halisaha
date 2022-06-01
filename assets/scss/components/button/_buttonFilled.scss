@@ -1,5 +1,6 @@
 .button__filled{
     @include flex;
+    @include justify-content(center);
     align-items: center;
     background-color: $color-button-fiiled;
     padding: 10px 30px;
@@ -7,4 +8,5 @@
     @include font-IzmirSemiBold(15px);
     @include border-radius(5px);
     color: $color-white;
+
 }

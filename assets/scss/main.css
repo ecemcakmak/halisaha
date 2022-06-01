@@ -794,6 +794,9 @@
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -812,6 +815,13 @@
   color: #969696;
   font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+
+.button__blank.brand {
+  color: #227f00;
+  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 275px;
 }
 
 .container__header {
@@ -1543,6 +1553,10 @@ template {
   color: #ffffff;
   font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
   font-size: 15px;
+}
+
+.content__slider .owl-item .item .container__slider a {
+  margin-top: 55px;
 }
 
 .footer {
