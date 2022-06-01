@@ -1511,19 +1511,17 @@ template {
   position: relative;
   width: 100%;
   min-height: calc(100vh - 225px);
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .content img {
   max-width: 100vw;
   height: 100%;
   z-index: -9;
+}
+
+.content__filter {
+  height: 160px;
+  background-color: #227f00;
 }
 
 .content__slider {
