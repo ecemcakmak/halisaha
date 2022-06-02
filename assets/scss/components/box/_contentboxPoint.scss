@@ -1,6 +1,23 @@
-.content__box{
-    &__point{
+.content__box {
+    &__point {
         height: 280px;
         width: 100%;
+        background-color: $color-box-background;
+        @include border-radius(5px);
+        position: relative;
+
+        &__img {
+            width: 100%;
+            height: 200px;
+            img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+        }
+
     }
 }
