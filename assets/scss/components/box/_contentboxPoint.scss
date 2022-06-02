@@ -1,14 +1,16 @@
 .content__box {
+    a{
+        text-decoration: none;
+    }
     &__point {
         height: 280px;
         width: 100%;
         background-color: $color-box-background;
         @include border-radius(5px);
         position: relative;
-
         &__img {
             width: 100%;
-            height: 200px;
+            height: 180px;           
             img{
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
@@ -18,6 +20,30 @@
             }
             
         }
+        &__body{
+            @include flex;
+            align-items: center;
+            padding: 15px;
+            &__profile{
+                padding-right: 20px;
+                img{
+                    max-width: 70px !important;
+                    @include border-radius(50%);
+                }
+            }
+            &__desc{
+                h6{
+                    margin-bottom: 0px;
+                    @include font-IzmirExtraBold(20px);
+                    color: $color-dark-text;
+                }
+                span{
+                    @include font-IzmirExtraBold(14px);
+                    color: $color-light-text;
+                }
+            }
+        }
+
 
     }
 }
