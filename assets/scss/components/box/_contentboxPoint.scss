@@ -5,10 +5,9 @@
         background-color: $color-box-background;
         @include border-radius(5px);
         position: relative;
-
         &__img {
             width: 100%;
-            height: 200px;
+            height: 180px;           
             img{
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
@@ -18,6 +17,18 @@
             }
             
         }
+        &__body{
+            @include flex;
+            padding: 15px;
+            &__profile{
+                padding-right: 20px;
+                img{
+                    max-width: 70px !important;
+                    @include border-radius(50%);
+                }
+            }
+        }
+
 
     }
 }
