@@ -1,4 +1,6 @@
 .content__filter{
     height: 160px;
     background-color: $color-brand;
+    @include flex;
+    align-items: center;
 }
