@@ -855,6 +855,10 @@
   height: auto;
 }
 
+.content__box a {
+  text-decoration: none;
+}
+
 .content__box__point {
   height: 280px;
   width: 100%;
@@ -882,6 +886,9 @@
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
 }
 
@@ -892,6 +899,19 @@
 .content__box__point__body__profile img {
   max-width: 70px !important;
   border-radius: 50%;
+}
+
+.content__box__point__body__desc h6 {
+  margin-bottom: 0px;
+  font-family: 'Izmir-ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #5e5e5e;
+}
+
+.content__box__point__body__desc span {
+  font-family: 'Izmir-ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #969696;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

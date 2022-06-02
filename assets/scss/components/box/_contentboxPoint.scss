@@ -1,4 +1,7 @@
 .content__box {
+    a{
+        text-decoration: none;
+    }
     &__point {
         height: 280px;
         width: 100%;
@@ -19,12 +22,24 @@
         }
         &__body{
             @include flex;
+            align-items: center;
             padding: 15px;
             &__profile{
                 padding-right: 20px;
                 img{
                     max-width: 70px !important;
                     @include border-radius(50%);
+                }
+            }
+            &__desc{
+                h6{
+                    margin-bottom: 0px;
+                    @include font-IzmirExtraBold(20px);
+                    color: $color-dark-text;
+                }
+                span{
+                    @include font-IzmirExtraBold(14px);
+                    color: $color-light-text;
                 }
             }
         }
