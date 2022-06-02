@@ -316,6 +316,31 @@
     user-select: none;
 }
 
+@mixin font-OpenSansBold($size:12px) {
+    font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
+    font-size: $size;
+}
+
+@mixin font-OpenSansExtraBold($size:12px) {
+    font-family: 'OpenSans-ExtraBold', Arial, Helvetica, sans-serif;
+    font-size: $size;
+}
+
+@mixin font-OpenSansMedium($size:12px) {
+    font-family: 'OpenSans-Medium', Arial, Helvetica, sans-serif;
+    font-size: $size;
+}
+
+@mixin font-OpenSansSemiBold($size:12px) {
+    font-family: 'OpenSans-SemiBold', Arial, Helvetica, sans-serif;
+    font-size: $size;
+}
+
+@mixin font-OpenSansRegular($size:12px) {
+    font-family: 'OpenSans-Regular', Arial, Helvetica, sans-serif;
+    font-size: $size;
+}
+
 @mixin font-Izmir($size:12px) {
     font-family: 'Izmir', Arial, Helvetica, sans-serif;
     font-size: $size;
