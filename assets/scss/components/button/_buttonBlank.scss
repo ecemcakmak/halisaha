@@ -1,12 +1,14 @@
-.button__blank{
+.button__blank {
     @extend .button__filled;
-    border: 1px solid $color-light-border;;
+    border: 2px solid $color-light-border;
     background-color: $color-white;
     color: $color-light-text;
     @include font-IzmirSemiBold(12px);
-    &.brand{
-      color: $color-brand;   
-      @include font-IzmirSemiBold(18px);
-      width: 275px;
+    font-weight: bold;
+    &.brand {
+        color: $color-brand;
+        @include font-IzmirSemiBold(18px);
+        font-weight: bold;
+        width: 275px;
     }
 }

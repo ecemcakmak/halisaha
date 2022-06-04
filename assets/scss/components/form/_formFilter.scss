@@ -1,5 +1,5 @@
-.form__filter{
-    &__select{
+.form__filter {
+    &__select {
         width: 100%;
         height: 45px;
         @include border-radius(5px);
@@ -7,5 +7,23 @@
         padding-left: 10px;
         padding-right: 10px;
         outline: none;
+    }
+    .datetime-element {
+        input {
+            width: 100%;
+            height: 45px;
+            border-radius: 5px;
+            border: 0;
+            padding: 10px;
+            color: #acafc9;
+            font-weight: 500;
+            &::placeholder {
+                color: #acafc9;
+            }
+        }
+    }
+    button {
+        height: 45px;
+        width: 100%;
     }
 }

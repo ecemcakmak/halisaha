@@ -1,15 +1,12 @@
 @charset "UTF-8";
-
 // 1. Configuration and helpers
 @import "abstracts/mixin",
 "abstracts/variable",
 "abstracts/mq-scss/functions",
 "abstracts/mq-scss/mq";
-
 @import "base/animation",
 "base/breadcrumb",
 "base/customCol";
-
 @import "components/button/buttonFilled",
 "components/button/buttonBlank",
 "components/container/containerHeader",
@@ -17,10 +14,13 @@
 "components/background/contentBackground",
 "components/box/contentboxPoint",
 "components/box/contentboxRating",
+"components/tab/tab-videoDetail",
+"components/sidebar/sidebar-right",
+"pages/videoDetail",
+"vendor/select2/theme/default/layout",
+"vendor/select2/core.scss",
 "components/box/boxRow";
-
 @import "vendor/normalize/normalize";
-
 @import "layout/header/header",
 "layout/header/headerTop/headerTop",
 "layout/header/headerTop/headerTopContact",
@@ -36,4 +36,3 @@
 "layout/content/contentTitle",
 "layout/content/contentFilter",
 "layout/footer/footer";
- 

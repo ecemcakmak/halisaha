@@ -1,4 +1,9 @@
-.content__box__rating{
+.content__box__rating {
+    margin-bottom: 20px;
+    @include box-shadow( 0 10px 15px 0 rgba(2, 2, 2, 0.05));
+    &:hover {
+        @include box-shadow(0 10px 15px 0 rgba(2, 2, 2, 0.4));
+    }
     position: relative;
     height: 280px;
     width: 100%;
@@ -8,15 +13,15 @@
     &__img {
         position: relative;
         width: 100%;
-        height: 180px;           
-        img{
+        height: 180px;
+        img {
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        span{
+        span {
             @include flex;
             flex-direction: column;
             align-items: center;
@@ -28,34 +33,35 @@
             @include font-IzmirExtraBold(20px);
         }
     }
-
-    &__body{
+    &__body {
         padding: 10px 15px;
-        &__title{
-            h5{
+        &__title {
+            h5 {
                 @include font-IzmirExtraBold(20px);
                 color: $color-extradark-text;
             }
         }
-        &__desc{
+        &__desc {
             @include flex;
             @include justify-content(space-between);
-            &-1{
+            &-1 {
                 @include flex;
                 flex-direction: column;
-                strong{
+                strong {
                     color: $color-brand;
-                    
                 }
-                span{
+                span {
                     color: $color-light-text;
                 }
             }
-            &-2{
+            &-2 {
                 @include flex;
                 flex-direction: column;
-                span{
+                span {
                     color: $color-extradark-text;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 13px;
                 }
             }
         }
