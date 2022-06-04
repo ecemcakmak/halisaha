@@ -1,0 +1,9 @@
+.header__responsive{
+    @include flex;
+    flex-direction: row;
+    @include mq(max, $xxl){
+        @include flex;
+        margin-bottom: 50px;
+    }
+
+}

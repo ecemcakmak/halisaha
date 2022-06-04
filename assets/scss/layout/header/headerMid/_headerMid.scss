@@ -1,9 +1,21 @@
 .header__mid{
     border-bottom: 1px solid $color-light-border;
     &__container{
-        @include flex;
-        @include justify-content(space-between);
-        align-items: center;
-        height: 100px;
+        @include mq(min, $xs0){
+            @include flex;
+            @include justify-content(space-between);
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+        }
+
+        
+        @include mq(min, $xxl){
+            @include flex;
+            flex-direction: row;
+            @include justify-content(space-between);
+            align-items: center;
+            height: 100px;
+        }
     }
 }
