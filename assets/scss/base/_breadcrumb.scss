@@ -1,22 +1,27 @@
 .breadcrumb {
-    padding: 10px 0px;
+    margin: 35px 0px;
     list-style: none;
     background: none;
-    li+li::before{
-        padding: 10px;
-        @include font-IzmirExtraBold(14px);
-        color: red;
-        content: ">";
-    }
-    li{
-        a{
-            @include font-IzmirExtraBold(14px);
-            color: red;
-            text-decoration: none;
-            &:hover{
-                color: yellow;
+    padding: 0px;
+    ul {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        @include flex();
+        li+li::before {
+            padding: 10px;
+            @include font-OpenSansSemiBold(13px);
+            font-weight: bold;
+            color: $color-breadcrump;
+            content: ">";
+        }
+        li {
+            list-style: none;
+            a {
+                @include font-OpenSansSemiBold(13px);
+                color: $color-breadcrump;
+                font-weight: bold;
+                text-decoration: none;
             }
         }
     }
-  }
-
+}

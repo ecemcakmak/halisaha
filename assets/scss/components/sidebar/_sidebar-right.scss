@@ -1,0 +1,12 @@
+.sidebar-right {
+    background-color: #f9f9f9;
+    padding: 15px 43px;
+    margin-bottom: 30px;
+    .title {
+        h3 {
+            margin-bottom: 27px;
+            @include font-OpenSansSemiBold(24px);
+            font-weight: bold;
+        }
+    }
+}

@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="assets/fonts/izmir/fonts.css">
     <link rel="stylesheet" href="assets/fonts/izmir/fonts.css">
     <link rel="stylesheet" href="assets/scss/main.css">
-
+    <link rel="stylesheet" href="assets/scss/vendor/rating/css-stars.css">
+    <link rel="stylesheet" href="assets/scss/vendor/rating/bootstrap-stars.css">
 
     <title>Video Detay</title>
 </head>
@@ -108,15 +109,265 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="breadcrumb">
+                            <ul>
+                                <li><a href="#">Anasayfa</a></li>
+                                <li><a href="#">Maç Videoları</a></li>
+                                <li><a href="#">Çamlık Halı Saha</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="video__player">
+                            <video width="100%" controls>
+                                <source src="https://cdn2.sosyalhalisaha.com/videos/disk2/shst400s1/goals/144076-21708760-2516-1654289820.mp4" type="video/mp4"> 
+                              </video>
+                        </div>
+                        <div class="tab__container">
+                            <div class="tab__container--title">
+                                <button class="button button__filled">
+                                    Bilgiler
+                                </button>
+                                <button class="button button__blank">
+                                    Videoyu Kes
+                                </button>
+                                <button class="button button__blank">
+                                   Bildir
+                                </button>
+                                <button class="button button__blank">
+                                    Maçta Oynadım
+                                 </button>
+                                <button class="button button__blank">
+                                    Sosyalleştir
+                                 </button>
+                            </div>
+                            <div class="tab__container--content">
+                                <div class="tab-bilgi">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="title">
+                                                <h3>Çamlıbel Otoyol Halı Saha</h3>
+                                                <p>2. Saha</p>
+                                                <span>15 Kasım 2021 14:38</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="content__box__rating__body__desc-2">
+                                                <div class="d-flex">
+                                                    <span>
+                                                        2 izlenme
+                                                    </span>
+                                                    <select class="detail-vote">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                          </select>
+                                                </div>
 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="social-share">
+                                                <div class="item facebook">
+                                                    <a href="#">
+                                                            Facebook'ta Paylaş <span></span>
+                                                        </a>
+                                                </div>
+                                                <div class="item twitter">
+                                                    <a href="#">
+                                                            Twitter'da Paylaş <span></span>
+                                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="video__detail--slider">
+                                                <div class="match-member"></div>
+                                                <div class="match-goal"></div>
+                                                <div class="match-rescue"></div>
+                                                <div class="match-position"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="comments__container">
+                                                <div class="title">
+
+                                                </div>
+                                                <div class="comment"></div>
+                                                <div class="old-comments">
+                                                    <div class="item">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-videoEdit">
+
+                                </div>
+                                <div class="tab-bildir"></div>
+                                <div class="tab-oynadim"></div>
+                                <div class="tab-sosyal"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sidebar-right">
+                            <div class="title">
+                                <h3>En Çok İzlenen Maçlar</h3>
+                            </div>
+                            <div class="popular__match-container">
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                        <option value=""></option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                      </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                        <option value=""></option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                      </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                        <option value=""></option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                      </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </main>
     <footer class="footer">
         <div class="container">
@@ -294,7 +545,12 @@
     <script src="assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/vendor/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
     <script>
+        $(".detail-vote").barrating({
+            theme: "css-stars",
+            initialRating: null,
+        });
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 0,

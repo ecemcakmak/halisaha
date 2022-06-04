@@ -1,12 +1,17 @@
-.button__filled{
+.button__filled {
     @include flex;
     @include justify-content(center);
     align-items: center;
     background-color: $color-button-fiiled;
     padding: 10px 30px;
+    font-weight: bold;
     border: 1px solid $color-white;
-    @include font-IzmirSemiBold(15px);
+    @include font-OpenSansBold(15px);
     @include border-radius(5px);
     color: $color-white;
-
+    &:hover {
+        @include box-shadow(0 4px 8px 0px rgba(83, 83, 83, 0.3));
+        text-decoration: none;
+        cursor: pointer;
+    }
 }

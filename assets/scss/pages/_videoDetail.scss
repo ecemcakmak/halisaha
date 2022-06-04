@@ -1,0 +1,63 @@
+.tab__container--content {
+    margin-top: 35px;
+    .tab-bilgi {
+        .title {
+            h3 {
+                @include font-OpenSansBold(20px);
+                font-weight: bold;
+                color: $color-extradark-text;
+            }
+            p {
+                color: $color-brand;
+                @include font-OpenSansMedium(16px);
+            }
+            span {
+                color: $color-dark-text;
+                @include font-OpenSansMedium(12px);
+            }
+        }
+        .content__box__rating__body__desc-2 div {
+            span {
+                text-align: right;
+            }
+            @include flex-direction(column);
+            @include justify-content(end);
+        }
+        .social-share {
+            .item {
+                margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    @include font-IzmirMedium(16px);
+                    @include flex();
+                    @include align-items(center);
+                    @include justify-content(end);
+                }
+                &.facebook {
+                    a {
+                        color: $color-facebook;
+                    }
+                    span {
+                        background-image: url('/assets/images/icon/facebook-1.svg');
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        margin-left: 15px;
+                    }
+                }
+                &.twitter {
+                    a {
+                        color: $color-twitter;
+                    }
+                    span {
+                        background-image: url('/assets/images/icon/twitterRenkli.svg');
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
