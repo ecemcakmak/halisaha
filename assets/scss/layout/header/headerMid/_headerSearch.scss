@@ -1,6 +1,9 @@
 .header__search{
-    width: 700px;
+    width: 100%;
     position: relative;
+    @include mq(min, $xl){
+        width: 700px;
+    }
     input{
         width: 100%;
         height: 45px;

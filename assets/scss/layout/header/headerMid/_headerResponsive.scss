@@ -1,9 +1,34 @@
 .header__responsive{
     @include flex;
     flex-direction: row;
+    width: 100%;
+    @include mq(max, $md){
+        .header__buttons{
+            flex-direction: column;
+            .button__filled{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @include mq(max, $xl){
+        flex-direction: column;
+        .header__search{
+            margin-bottom: 30px;
+        }
+        .header__buttons{
+            .button__filled{
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 20px;
+            }
+            .button__blank{
+                margin-right: 0px;
+            }
+        }
+    }
     @include mq(max, $xxl){
         @include flex;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
 }
