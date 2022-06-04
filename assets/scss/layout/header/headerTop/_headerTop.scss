@@ -1,8 +1,12 @@
 .header__top{
     @include flex;
-
+    @include mq(min, $md){
+        width: 100%;
+        height: 40px;
+ 
+    }
+ 
     align-items: center;
     border-bottom: 1px solid $color-light-border;
-    width: 100%;
-    height: 40px;
+    height: auto;
 }

@@ -5,13 +5,31 @@
     a {
         text-decoration: none;
         margin-right: 30px;
+        img{
+            display: none;
+        }
+        @include mq(max, $md){
+            img{
+                max-width: 25px;
+                display: block;
+            }
+            span{
+                display: none;
+            }
+            strong{
+                display: none;
+            }
+        }
+      
         strong{
             color: $color-dark-text;
             @include font-IzmirMedium(13px);
+          
         }
         span{
             color: $color-light-text;
             @include font-IzmirMedium(14px);
+            
         }
         
     }
