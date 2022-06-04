@@ -3097,8 +3097,8 @@ template {
   max-width: 750px;
   width: 100%;
   position: absolute;
-  top: 150px;
-  padding-left: 150px;
+  top: 100px;
+  padding-left: 45px;
 }
 
 .content__slider .owl-item .item .container__slider h3 {
@@ -3116,6 +3116,13 @@ template {
 
 .content__slider .owl-item .item .container__slider a {
   margin-top: 55px;
+}
+
+@media (min-width: 993px) {
+  .content__slider .owl-item .item .container__slider {
+    top: 150px;
+    padding-left: 150px;
+  }
 }
 
 .content {
