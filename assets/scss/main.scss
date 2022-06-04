@@ -4,9 +4,12 @@
 "abstracts/variable",
 "abstracts/mq-scss/functions",
 "abstracts/mq-scss/mq";
+
 @import "base/animation",
 "base/breadcrumb",
 "base/customCol";
+
+
 @import "components/button/buttonFilled",
 "components/button/buttonBlank",
 "components/container/containerHeader",
@@ -20,12 +23,17 @@
 "vendor/select2/theme/default/layout",
 "vendor/select2/core.scss",
 "components/box/boxRow";
+
+
 @import "vendor/normalize/normalize";
+
+
 @import "layout/header/header",
 "layout/header/headerTop/headerTop",
 "layout/header/headerTop/headerTopContact",
 "layout/header/headerTop/headerTopSocial",
 "layout/header/headerMid/headerMid",
+"layout/header/headerMid/headerLogo",
 "layout/header/headerMid/headerSearch",
 "layout/header/headerMid/headerButtons",
 "layout/header/headerBottom/headerBottom",

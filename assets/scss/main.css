@@ -2703,6 +2703,11 @@ template {
   height: 100px;
 }
 
+.header__logo img {
+  max-width: 300px;
+  width: 100%;
+}
+
 .header__search {
   width: 700px;
   position: relative;
