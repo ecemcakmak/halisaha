@@ -1,25 +1,38 @@
 .content__slider {
     width: 100%;
+
     .owl-item {
         .item {
+            width: 100%;
+            height: 793px;
             position: relative;
-            .container__slider{
+
+            img {
+                width: 100%;
+                height: 793px;
+                object-fit: cover;
+            }
+
+            .container__slider {
                 max-width: 750px;
                 width: 100%;
                 position: absolute;
                 top: 150px;
                 padding-left: 150px;
+
                 h3 {
                     margin-bottom: 25px;
-                    color: $color-white;              
+                    color: $color-white;
                     @include font-IzmirExtraBold(60px);
                 }
-                span{
-                    color: $color-white;               
+
+                span {
+                    color: $color-white;
                     @include font-IzmirSemiBold(15px);
-                    
+
                 }
-                a{
+
+                a {
                     margin-top: 55px;
                 }
             }

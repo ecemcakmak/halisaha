@@ -2967,7 +2967,16 @@ template {
 }
 
 .content__slider .owl-item .item {
+  width: 100%;
+  height: 793px;
   position: relative;
+}
+
+.content__slider .owl-item .item img {
+  width: 100%;
+  height: 793px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .content__slider .owl-item .item .container__slider {
