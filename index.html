@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/scss/main.css">
 
 
+    <link rel="stylesheet" href="assets/js/vendor/intl/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/js/vendor/daterange/daterangepicker.css">
+
     <link rel="stylesheet" href="assets/scss/vendor/rating/css-stars.css">
     <link rel="stylesheet" href="assets/scss/vendor/rating/bootstrap-stars.css">
 
@@ -137,28 +140,25 @@
             <div class="container">
                 <form action="" class="form__filter row">
                     <div class="col-3">
-                        <select class="form__filter__select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                          </select>
+                        <div class="select-element">
+                            <select required name="tesis" id="tesis" style="width: 100%" placeholder="Tesis Seçiniz.">
+                                <option></option>
+                                <option value="1">1. Tesis</option>
+                                <option value="2">2. Tesis</option>
+                                <option value="2">3. Tesis</option>
+                                <option value="2">4. Tesis</option>
+                                <option value="2">5. Tesis</option>
+                            </select>
+                        </div>
+
                     </div>
                     <div class="col-3">
-                        <select class="form__filter__select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                          </select>
+                        <div class="input-element datetime-element">
+                            <input type="text" class="input register-birthday" id="macTarih" placeholder="Tarih Seçin" name="macTarih" />
+                        </div>
                     </div>
                     <div class="col-3">
-                        <select class="form__filter__select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                          </select>
+                        <button class="button button__filled">Filtrele</button>
                     </div>
                 </form>
             </div>
@@ -663,7 +663,24 @@
     <script src="assets/js/vendor/owl/owl.carousel.min.js"></script>
 
     <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
+
+    <script src="assets/js/vendor/intl/js/intlTelInput.js"></script>
+
+    <script src="assets/js/vendor/daterange/moment.min.js"></script>
+    <script src="assets/js/vendor/daterange/daterangepicker.js"></script>
+    <script src="assets/js/vendor/select2/select2.full.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
     <script>
+        const dropdownSearch = (element) => {
+            element.select2({
+                placeholder: element.attr("placeholder"),
+                allowClear: true,
+            });
+        };
+        dropdownSearch($("#tesis"));
+        dateTimeElement($("#macTarih"));
         $(".detail-vote").barrating({
             theme: "css-stars",
             initialRating: null,
