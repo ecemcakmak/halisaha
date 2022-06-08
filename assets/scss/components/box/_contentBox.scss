@@ -1,0 +1,26 @@
+.content__box{
+    background-color: $color-white;
+    @include border-radius(10px);
+    padding: 50px 20px;
+    @include mq(min, $xl){
+        padding: 60px 130px;
+    }
+    &__title{
+        h2{
+            @include font-IzmirExtraBold(22px);
+            color: $color-brand;
+        }
+    }
+    &__subtitle{
+        h5{
+            @include font-IzmirExtraBold(16px);
+            color: $color-brand;
+        }
+    }
+    &__text{
+        p{
+            @include font-IzmirSemiBold(16px);
+            color: $color-dark-text; 
+        }
+    }
+}
