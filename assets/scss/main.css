@@ -907,6 +907,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
+  min-height: calc(100vh - 185px);
+}
+
+.content__background__box {
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .content__box {

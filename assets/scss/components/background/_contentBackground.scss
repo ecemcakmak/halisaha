@@ -7,4 +7,10 @@
     background-repeat: no-repeat; 
     background-size: cover;
     height: auto;
+    min-height: calc(100vh - 185px);
+    &__box{
+        padding: 40px 30px;
+        background-color: $color-white;
+        @include border-radius(10px);
+    }
 }
