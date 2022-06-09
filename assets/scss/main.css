@@ -1014,11 +1014,14 @@
 .content__box {
   background-color: #ffffff;
   border-radius: 10px;
+}
+
+.content__box.white-background {
   padding: 50px 20px;
 }
 
 @media (min-width: 1201px) {
-  .content__box {
+  .content__box.white-background {
     padding: 60px 130px;
   }
 }
