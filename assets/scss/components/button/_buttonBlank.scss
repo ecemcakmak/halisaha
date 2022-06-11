@@ -3,12 +3,15 @@
     border: 2px solid $color-light-border;
     background-color: $color-white;
     color: $color-light-text;
-    @include font-IzmirSemiBold(12px);
+    @include font-OpenSansBold(12px);
     font-weight: bold;
     &.brand {
         color: $color-brand;
-        @include font-IzmirSemiBold(18px);
+        @include font-OpenSansBold(18px);
         font-weight: bold;
         width: 275px;
+    }
+    &.active{
+        @extend .button__filled;
     }
 }

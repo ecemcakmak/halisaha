@@ -6,7 +6,7 @@
     padding: 10px 30px;
     font-weight: bold;
     border: 1px solid $color-white;
-    @include font-OpenSansBold(15px);
+    @include font-OpenSansBold(12px);
     @include border-radius(5px);
     color: $color-white;
     &:hover {

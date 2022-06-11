@@ -801,7 +801,7 @@
   }
 }
 
-.button__filled, .button__blank {
+.button__filled, .button__blank, .button__blank.active {
   display: -webkit-box;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -817,7 +817,7 @@
   font-weight: bold;
   border: 1px solid #ffffff;
   font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -834,14 +834,14 @@
   border: 2px solid #e4e4e4;
   background-color: #ffffff;
   color: #969696;
-  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: bold;
 }
 
 .button__blank.brand {
   color: #227f00;
-  font-family: 'Izmir-Semibold', Arial, Helvetica, sans-serif;
+  font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
   width: 275px;
