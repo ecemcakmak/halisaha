@@ -18,6 +18,18 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <title>Video Detay</title>
+    <style>
+
+
+        .tab__container--title button.active {
+          background-color: green;
+        }
+
+        .tab__container--content-1 {
+          display: none;
+        }
+        </style>
+
 </head>
 
 <body>
@@ -127,24 +139,24 @@
                         </div>
                         <div class="tab__container">
                             <div class="tab__container--title">
-                                <button class="button button__filled">
+                                <button class="button button__blank" onclick="openCity(event, 'Bilgiler')">
                                     Bilgiler
                                 </button>
-                                <button class="button button__blank">
+                                <button class="button button__blank" onclick="openCity(event, 'VideoyuKes')">
                                     Videoyu Kes
                                 </button>
-                                <button class="button button__blank">
+                                <button class="button button__blank" onclick="openCity(event, 'Bildir')">
                                    Bildir
                                 </button>
-                                <button class="button button__blank">
+                                <button class="button button__blank" onclick="openCity(event, 'MactaOynadım')">
                                     Maçta Oynadım
                                  </button>
-                                <button class="button button__blank">
+                                <button class="button button__blank" onclick="openCity(event, 'Sosyallestir')">
                                     Sosyalleştir
                                  </button>
                             </div>
-                            <div class="tab__container--content">
-                                <div class="tab-bilgi">
+                           
+                                <div class="tab__container--content" id="Bilgiler">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="title">
@@ -189,13 +201,13 @@
 
 
                                 </div>
-                                <div class="tab-videoEdit">
+                                <div class="tab__container--content">
 
                                 </div>
-                                <div class="tab-bildir"></div>
-                                <div class="tab-oynadim"></div>
-                                <div class="tab-sosyal"></div>
-                            </div>
+                                <div class="tab__container--content"></div>
+                                <div class="tab__container--content"></div>
+                                <div class="tab__container--content"></div>
+                           
                         </div>
                         <div class="slider__group">
                             <div class="row">
@@ -844,7 +856,21 @@
     <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tab__container--content");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("button__blank");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace("active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
     <script>
         $(".detail-vote").barrating({
             theme: "css-stars",
