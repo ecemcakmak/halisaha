@@ -62,6 +62,23 @@
                 }
             }
         }
+        &.videoKes{
+            .title {
+                h3 {
+                    @include font-OpenSansBold(20px);
+                    font-weight: bold;
+                    color: $color-extradark-text;
+                }
+                p {
+                    color: $color-brand;
+                    @include font-OpenSansMedium(16px);
+                }
+                span {
+                    color: $color-dark-text;
+                    @include font-OpenSansMedium(12px);
+                }
+            }
+        }
     }
     
     .slider__group {

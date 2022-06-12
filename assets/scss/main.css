@@ -1339,6 +1339,25 @@
   margin-left: 15px;
 }
 
+.tab__container--content.videoKes .title h3 {
+  font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.tab__container--content.videoKes .title p {
+  color: #227f00;
+  font-family: 'OpenSans-Medium', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.tab__container--content.videoKes .title span {
+  color: #5e5e5e;
+  font-family: 'OpenSans-Medium', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
 .slider__group .video__detail--slider div.item-slide-group {
   margin-bottom: 30px;
 }
