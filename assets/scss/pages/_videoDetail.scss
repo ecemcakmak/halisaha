@@ -1,6 +1,8 @@
     .tab__container--content {
+        display: none;
         margin-top: 35px;
-        .tab-bilgi {
+        &.bilgiler {
+            display: block;
             .title {
                 h3 {
                     @include font-OpenSansBold(20px);

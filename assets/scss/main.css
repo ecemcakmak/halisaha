@@ -1254,29 +1254,34 @@
 }
 
 .tab__container--content {
+  display: none;
   margin-top: 35px;
 }
 
-.tab__container--content .tab-bilgi .title h3 {
+.tab__container--content.bilgiler {
+  display: block;
+}
+
+.tab__container--content.bilgiler .title h3 {
   font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #000000;
 }
 
-.tab__container--content .tab-bilgi .title p {
+.tab__container--content.bilgiler .title p {
   color: #227f00;
   font-family: 'OpenSans-Medium', Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
-.tab__container--content .tab-bilgi .title span {
+.tab__container--content.bilgiler .title span {
   color: #5e5e5e;
   font-family: 'OpenSans-Medium', Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-.tab__container--content .tab-bilgi .content__box__rating__body__desc-2 div {
+.tab__container--content.bilgiler .content__box__rating__body__desc-2 div {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
@@ -1286,15 +1291,15 @@
   justify-content: end;
 }
 
-.tab__container--content .tab-bilgi .content__box__rating__body__desc-2 div span {
+.tab__container--content.bilgiler .content__box__rating__body__desc-2 div span {
   text-align: right;
 }
 
-.tab__container--content .tab-bilgi .social-share .item {
+.tab__container--content.bilgiler .social-share .item {
   margin-bottom: 10px;
 }
 
-.tab__container--content .tab-bilgi .social-share .item a {
+.tab__container--content.bilgiler .social-share .item a {
   text-decoration: none;
   font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -1310,11 +1315,11 @@
   justify-content: end;
 }
 
-.tab__container--content .tab-bilgi .social-share .item.facebook a {
+.tab__container--content.bilgiler .social-share .item.facebook a {
   color: #306199;
 }
 
-.tab__container--content .tab-bilgi .social-share .item.facebook span {
+.tab__container--content.bilgiler .social-share .item.facebook span {
   background-image: url("/assets/images/icon/facebook-1.svg");
   display: block;
   width: 36px;
@@ -1322,11 +1327,11 @@
   margin-left: 15px;
 }
 
-.tab__container--content .tab-bilgi .social-share .item.twitter a {
+.tab__container--content.bilgiler .social-share .item.twitter a {
   color: #27c4f1;
 }
 
-.tab__container--content .tab-bilgi .social-share .item.twitter span {
+.tab__container--content.bilgiler .social-share .item.twitter span {
   background-image: url("/assets/images/icon/twitterRenkli.svg");
   display: block;
   width: 36px;

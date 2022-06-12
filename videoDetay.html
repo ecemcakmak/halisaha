@@ -129,24 +129,23 @@
                         </div>
                         <div class="tab__container">
                             <div class="tab__container--title">
-                                <button class="button button__blank" onclick="openCity(event, 'Bilgiler')">
+                                <button class="button button__blank active" onclick="videoInfo(event, 'Bilgiler')">
                                     Bilgiler
                                 </button>
-                                <button class="button button__blank" onclick="openCity(event, 'VideoyuKes')">
+                                <button class="button button__blank" onclick="videoInfo(event, 'VideoyuKes')">
                                     Videoyu Kes
                                 </button>
-                                <button class="button button__blank" onclick="openCity(event, 'Bildir')">
+                                <button class="button button__blank" onclick="videoInfo(event, 'Bildir')">
                                    Bildir
                                 </button>
-                                <button class="button button__blank" onclick="openCity(event, 'MactaOynadım')">
+                                <button class="button button__blank" onclick="videoInfo(event, 'MactaOynadım')">
                                     Maçta Oynadım
                                  </button>
-                                <button class="button button__blank" onclick="openCity(event, 'Sosyallestir')">
+                                <button class="button button__blank" onclick="videoInfo(event, 'Sosyallestir')">
                                     Sosyalleştir
                                  </button>
-                            </div>
-                           
-                                <div class="tab__container--content" id="Bilgiler">
+                            </div>                           
+                                <div class="tab__container--content bilgiler" id="Bilgiler">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="title">
@@ -188,10 +187,49 @@
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
-                                <div class="tab__container--content" id="VideoyuKes">
+                                <div class="tab__container--content videoKes" id="VideoyuKes">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="title">
+                                                <h3>Çamlıbel Otoyol Halı Saha</h3>
+                                                <p>2. Saha</p>
+                                                <span>15 Kasım 2021 14:38</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="content__box__rating__body__desc-2">
+                                                <div class="d-flex">
+                                                    <span>
+                                                        2 izlenme
+                                                    </span>
+                                                    <select class="detail-vote">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                          </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="social-share">
+                                                <div class="item facebook">
+                                                    <a href="#">
+                                                            Facebook'ta Paylaş <span></span>
+                                                        </a>
+                                                </div>
+                                                <div class="item twitter">
+                                                    <a href="#">
+                                                            Twitter'da Paylaş <span></span>
+                                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                                 <div class="tab__container--content" id="Bildir"></div>
@@ -847,7 +885,7 @@
     <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        function openCity(evt, cityName) {
+        function videoInfo(evt, videoName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tab__container--content");
           for (i = 0; i < tabcontent.length; i++) {
@@ -857,7 +895,7 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace("active", "");
           }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(videoName).style.display = "block";
           evt.currentTarget.className += " active";
         }
         </script>
