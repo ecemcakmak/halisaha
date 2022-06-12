@@ -78,6 +78,21 @@
                     @include font-OpenSansMedium(12px);
                 }
             }
+            .select-element{              
+                select{
+                    border: 2px solid $color-light-border;
+                    background-color: $color-white;
+                    @include border-radius(5px);
+                    padding: 10px 10px;                
+                    color: $color-light-text;
+                    @include font-OpenSansBold(12px);
+                    font-weight: bold;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
         }
     }
     
