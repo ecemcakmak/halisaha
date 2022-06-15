@@ -2,10 +2,10 @@
     margin: 34px 0px;
     &--title {
         @include flex();
-        @include justify-content(space-between);
         button {
             max-width: 164px;
             width: 100%;
+            margin-right: 20px;
         }
     }
 }

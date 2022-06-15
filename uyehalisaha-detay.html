@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/js/vendor/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/js/vendor/owl/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/fonts/izmir/fonts.css">
+    <link rel="stylesheet" href="assets/fonts/izmir/fonts.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/scss/vendor/rating/css-stars.css">
+    <link rel="stylesheet" href="assets/scss/vendor/rating/bootstrap-stars.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <title>Video Detay</title>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container container__header">
+                <div class="header__contact">
+                    <a href="tel:05554653645">
+                        <strong>İLETİŞİM:</strong>
+                        <span>0555 465 36 45</span>
+                    </a>
+                    <a href="mailto:info.halisaha.com">
+                        <strong>E-MAIL:</strong>
+                        <span>info.halisaha.com</span>
+                    </a>
+                </div>
+                <div class="header__socialmedias">
+                    <a href="#">
+                        <img src="assets/images/icon/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/icon/instagram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/icon/twitter.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/icon/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header__mid">
+            <div class="container header__mid__container">
+                <div class="header__logo">
+                    <img src="" alt="">
+                    <span>LOGO GELECEK</span>
+                </div>
+                <div class="header__search">
+                    <input type="text" placeholder="Gol, halı saha, rakip ara ...">
+                    <div class="header__search__icon">
+                        <span>ARA</span>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="header__buttons">
+                    <a href="" class="button button__filled">
+                        MAÇ BUL
+                    </a>
+                    <a href="" class="button button__blank">
+                        <img src="assets/images/icon/uye.svg" alt=""> Kayıt Ol/ Giriş Yap
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__navbar">
+
+                    <nav>
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">
+                            <i class="fa fa-bars menu-icon"></i>
+                        </label>
+                        <ul>
+                            <li>
+                                <a href="#">HAKKIMIZDA</a>
+                                <ul>
+                                    <li>ecem</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MAÇ VİDEOLARI</a></li>
+                            <li><a href="#">ÜYE VİDEOLARI</a></li>
+                            <li><a href="#">HAFTANIN GOLÜ</a></li>
+                            <li><a href="#">ÜYE HALI SAHA</a></li>
+                        </ul>
+
+
+
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="content">
+        <div class="video__detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="#">Anasayfa</a></li>
+                                <li><a href="#">Maç Videoları</a></li>
+                                <li><a href="#">Çamlık Halı Saha</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">                       
+                        <div class="tab__container">
+                            <div class="tab__container--title">
+                                <button class="button button__blank active" onclick="videoInfo(event, 'Fotograflar')">
+                                    Fotoğraflar
+                                </button>
+                                <button class="button button__blank" onclick="videoInfo(event, 'Konum')">
+                                   Konum
+                                </button>
+                                <button class="button button__blank" onclick="videoInfo(event, 'Iletisim')">
+                                    İletişim Formu
+                                </button>
+                            </div>
+                            <div class="tab__container--content fotograflar" id="Fotograflar">
+                                <div class="row">
+                                  
+                                </div>
+                            </div>
+                            <div class="tab__container--content konum" id="Konum">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="title">
+                                            <h3>Konum</h3>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                               
+                            </div>
+                            <div class="tab__container--content iletisim" id="Iletisim">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="title">
+                                            <h3>Bildir</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="select-element">
+                                            <select required name="pozisyonTipi" id="pozisyonTipi" style="width: 100%">
+                                                <option value="" disabled selected>Pozisyon Tipi</option>
+                                                <option value="1">1. Tesis</option>
+                                                <option value="2">2. Tesis</option>
+                                                <option value="2">3. Tesis</option>
+                                                <option value="2">4. Tesis</option>
+                                                <option value="2">5. Tesis</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="select-element">
+                                            <select required name="pozisyonTipi" id="pozisyonTipi" style="width: 100%">
+                                                <option value="" disabled selected>Pozisyon Tipi</option>
+                                                <option value="1">1. Tesis</option>
+                                                <option value="2">2. Tesis</option>
+                                                <option value="2">3. Tesis</option>
+                                                <option value="2">4. Tesis</option>
+                                                <option value="2">5. Tesis</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <div class="content__textarea">
+                                            <textarea name="" placeholder="Yorum Yapın..." id="" class="w-100"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__group">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="video__detail--slider">
+
+                                        <div class="item-slide-group">
+                                            <div class="title">
+                                                <h3>Oynayan Üyeler:</h3>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="match-member">
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/profile/profile.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/profile/profile.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/profile/profile.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/profile/profile.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-slide-group">
+                                            <div class="title">
+                                                <h3>Goller:</h3>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="match-goal">
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-slide-group">
+                                            <div class="title">
+                                                <h3>Kurtarışlar:</h3>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="match-rescue">
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-slide-group">
+                                            <div class="title">
+                                                <h3>Pozisyonlar:</h3>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="match-position">
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="assets/images/icon/mini-video.jpg" alt="">
+                                                        <span>Buğra Çalım</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments__group">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="comments__container">
+                                        <div class="title">
+                                            <button class="button button__filled">
+                                                Yorumlar
+                                            </button>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="photo">
+                                                <img src="assets/images/profile/profile.jpg" alt="" srcset="">
+                                            </div>
+                                            <div class="control">
+                                                <textarea name="" placeholder="Yorum Yapın..." id="" cols="30"
+                                                    rows="5"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="old-comments">
+                                            <div class="item">
+                                                <div id="#comment1" class="comment">
+                                                    <div class="photo"><img src="assets/images/profile/profile.jpg"
+                                                            alt="Mahsun Budak"></div>
+                                                    <div class="text">
+                                                        <p class="author">Mahsun Budak</p>
+                                                        <p class="author-comment">Lorem ipsum dolor sit amet,
+                                                            consectetur adipisicing elit. Impedit adipisci asperiores
+                                                            quo earum provident minus dolores veniam itaque? Maiores
+                                                            magnam aliquam earum ipsam soluta possimus tempore ut
+                                                            deleniti ipsa fuga?
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div id="#comment1" class="comment">
+                                                    <div class="photo"><img src="assets/images/profile/profile.jpg"
+                                                            alt="Mahsun Budak"></div>
+                                                    <div class="text">
+                                                        <p class="author">Mahsun Budak</p>
+                                                        <p class="author-comment">Lorem ipsum dolor sit amet,
+                                                            consectetur adipisicing elit. Impedit adipisci asperiores
+                                                            quo earum provident minus dolores veniam itaque? Maiores
+                                                            magnam aliquam earum ipsam soluta possimus tempore ut
+                                                            deleniti ipsa fuga?
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div id="#comment1" class="comment">
+                                                    <div class="photo"><img src="assets/images/profile/profile.jpg"
+                                                            alt="Mahsun Budak"></div>
+                                                    <div class="text">
+                                                        <p class="author">Mahsun Budak</p>
+                                                        <p class="author-comment">Lorem ipsum dolor sit amet,
+                                                            consectetur adipisicing elit. Impedit adipisci asperiores
+                                                            quo earum provident minus dolores veniam itaque? Maiores
+                                                            magnam aliquam earum ipsam soluta possimus tempore ut
+                                                            deleniti ipsa fuga?
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sidebar-right">
+                            <div class="title">
+                                <h3>En Çok İzlenen Maçlar</h3>
+                            </div>
+                            <div class="popular__match-container">
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                    <option value=""></option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                    <option value=""></option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                    <option value=""></option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                    <option value=""></option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                    <option value=""></option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="content__box">
+                                        <a href="">
+                                            <div class="content__box__rating">
+                                                <div class="content__box__rating__img">
+                                                    <img src="assets/images/box/box-rating.jpg" alt="">
+                                                </div>
+
+                                                <div class="content__box__rating__body">
+                                                    <div class="content__box__rating__body__title">
+                                                        <h5>
+                                                            Çamlık Halı Saha
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content__box__rating__body__desc">
+                                                        <div class="content__box__rating__body__desc-1">
+                                                            <strong>
+                                                                2.Saha
+                                                            </strong>
+                                                            <span>
+                                                                15 Kasım 2021 14:38
+                                                            </span>
+                                                        </div>
+                                                        <div class="content__box__rating__body__desc-2">
+                                                            <div class="d-flex justify-content-center ">
+                                                                <select class="detail-vote">
+                                                                    <option value=""></option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <span>
+                                                                2 izlenme
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footter__row">
+                <div class="col-xl-2 col-md-4 col-sm-6 footer__col">
+                    <div class="footer__title">
+                        <span>
+                            <a href="">
+                                HAKKIMIZDA
+                            </a>
+                        </span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">
+                                Biz Kimiz?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Kurucularımız
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Amacımız
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Vizyon Misyon
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 footer__col">
+                    <div class="footer__title">
+                        <span>
+                            <a href="">
+                                MAÇ VİDEOLARI
+                            </a>
+                        </span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">
+                                Maç Videolarım
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Beğendiğim Videolar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Günün Maçları
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 footer__col">
+                    <div class="footer__title">
+                        <span>
+                            <a href="">
+                                ÜYE VİDEOLARI
+                            </a>
+                        </span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">
+                                Maç Videolarım
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Beğendiğim Videolar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Günün Maçları
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 footer__col">
+                    <div class="footer__title">
+                        <span>
+                            <a href="">
+                                HAFTANIN GOLÜ
+                            </a>
+                        </span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">
+                                Maç Videolarım
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Beğendiğim Videolar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Günün Maçları
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 footer__col">
+                    <div class="footer__title">
+                        <span>
+                            <a href="">
+                                ÜYE HALI SAHA
+                            </a>
+                        </span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">
+                                Maç Videolarım
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Beğendiğim Videolar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Günün Maçları
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 footer__col">
+                    <div class="footer__title">
+                        <span>
+                            <a href="">
+                                HALI SAHA KAYIT
+                            </a>
+                        </span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="">
+                                Nasıl Kayıt Yaptırabilirim?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Ücretlendirme
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Kayıt Belgeleri
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <span>
+                Copyright © 2022 All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+    <script src="assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        function videoInfo(evt, videoName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab__container--content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("button__blank");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(videoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <script>
+        $(".detail-vote").barrating({
+            theme: "css-stars",
+            initialRating: null,
+        });
+        $('.match-member').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            variableWidth: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
+
+        });
+        $('.match-goal').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
+
+        });
+        $('.match-rescue').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
+
+        });
+        $('.match-position').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
+
+        });
+    </script>
+
+</body>
+
+</html>

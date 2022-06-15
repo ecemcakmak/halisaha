@@ -1247,14 +1247,12 @@
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .tab__container--title button {
   max-width: 164px;
   width: 100%;
+  margin-right: 20px;
 }
 
 .sidebar-right {
