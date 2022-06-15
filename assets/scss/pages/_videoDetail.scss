@@ -1,6 +1,42 @@
     .tab__container--content {
         display: none;
         margin-top: 35px;
+        .social-share {
+            .item {
+                margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    @include font-IzmirMedium(16px);
+                    @include flex();
+                    @include align-items(center);
+                    @include justify-content(end);
+                }
+                &.facebook {
+                    a {
+                        color: $color-facebook;
+                    }
+                    span {
+                        background-image: url('/assets/images/icon/facebook-1.svg');
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        margin-left: 15px;
+                    }
+                }
+                &.twitter {
+                    a {
+                        color: $color-twitter;
+                    }
+                    span {
+                        background-image: url('/assets/images/icon/twitterRenkli.svg');
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
         &.bilgiler {
             display: block;
             .title {
@@ -25,42 +61,7 @@
                 @include flex-direction(column);
                 @include justify-content(end);
             }
-            .social-share {
-                .item {
-                    margin-bottom: 10px;
-                    a {
-                        text-decoration: none;
-                        @include font-IzmirMedium(16px);
-                        @include flex();
-                        @include align-items(center);
-                        @include justify-content(end);
-                    }
-                    &.facebook {
-                        a {
-                            color: $color-facebook;
-                        }
-                        span {
-                            background-image: url('/assets/images/icon/facebook-1.svg');
-                            display: block;
-                            width: 36px;
-                            height: 36px;
-                            margin-left: 15px;
-                        }
-                    }
-                    &.twitter {
-                        a {
-                            color: $color-twitter;
-                        }
-                        span {
-                            background-image: url('/assets/images/icon/twitterRenkli.svg');
-                            display: block;
-                            width: 36px;
-                            height: 36px;
-                            margin-left: 15px;
-                        }
-                    }
-                }
-            }
+          
         }
         &.videoKes{
             .title {

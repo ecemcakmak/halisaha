@@ -1275,6 +1275,50 @@
   margin-top: 35px;
 }
 
+.tab__container--content .social-share .item {
+  margin-bottom: 10px;
+}
+
+.tab__container--content .social-share .item a {
+  text-decoration: none;
+  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.tab__container--content .social-share .item.facebook a {
+  color: #306199;
+}
+
+.tab__container--content .social-share .item.facebook span {
+  background-image: url("/assets/images/icon/facebook-1.svg");
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-left: 15px;
+}
+
+.tab__container--content .social-share .item.twitter a {
+  color: #27c4f1;
+}
+
+.tab__container--content .social-share .item.twitter span {
+  background-image: url("/assets/images/icon/twitterRenkli.svg");
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-left: 15px;
+}
+
 .tab__container--content.bilgiler {
   display: block;
 }
@@ -1310,50 +1354,6 @@
 
 .tab__container--content.bilgiler .content__box__rating__body__desc-2 div span {
   text-align: right;
-}
-
-.tab__container--content.bilgiler .social-share .item {
-  margin-bottom: 10px;
-}
-
-.tab__container--content.bilgiler .social-share .item a {
-  text-decoration: none;
-  font-family: 'Izmir-Medium', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-}
-
-.tab__container--content.bilgiler .social-share .item.facebook a {
-  color: #306199;
-}
-
-.tab__container--content.bilgiler .social-share .item.facebook span {
-  background-image: url("/assets/images/icon/facebook-1.svg");
-  display: block;
-  width: 36px;
-  height: 36px;
-  margin-left: 15px;
-}
-
-.tab__container--content.bilgiler .social-share .item.twitter a {
-  color: #27c4f1;
-}
-
-.tab__container--content.bilgiler .social-share .item.twitter span {
-  background-image: url("/assets/images/icon/twitterRenkli.svg");
-  display: block;
-  width: 36px;
-  height: 36px;
-  margin-left: 15px;
 }
 
 .tab__container--content.videoKes .title h3, .tab__container--content.bildir .title h3 {
