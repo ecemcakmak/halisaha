@@ -37,6 +37,17 @@
                 }
             }
         }
+        &.fotograflar{
+            display: block;
+        }
+        &.konum{
+            iframe{
+                border: none;
+                height: 487px;
+                width: 100%;
+            }
+
+        }
         &.bilgiler {
             display: block;
             .title {
