@@ -3218,6 +3218,20 @@ template {
   width: 100%;
 }
 
+.content__slider.tab-slider .owl-item .item {
+  width: 100%;
+  height: 793px;
+  position: relative;
+}
+
+.content__slider.tab-slider .owl-item .item img {
+  border-radius: 5px;
+  width: 100%;
+  height: 537px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .content__slider .owl-item .item {
   width: 100%;
   height: 793px;

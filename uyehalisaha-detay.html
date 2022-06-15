@@ -136,18 +136,20 @@
                             </div>
                             <div class="tab__container--content fotograflar" id="Fotograflar">
                                 <div class="row">
-                                  
+                                  <div class="col-12">
+                                    <div class="content__slider tab-slider">
+                                        <div class="owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="assets/images/banner/tab-banner.jpg" alt="">                                                                         
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                             <div class="tab__container--content konum" id="Konum">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="title">
-                                            <h3>Konum</h3>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
+                                                                                              
                                
                             </div>
                             <div class="tab__container--content iletisim" id="Iletisim">
@@ -847,6 +849,7 @@
     </footer>
     <script src="assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/owl/owl.carousel.min.js"></script>
     <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
@@ -863,6 +866,16 @@
             document.getElementById(videoName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+    </script>
+    <script>
+                $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            center: true,
+            items: 1,
+            nav: false,
+            dots: false,
+        })
     </script>
     <script>
         $(".detail-vote").barrating({
