@@ -3296,6 +3296,22 @@ template {
           align-items: center;
 }
 
+.content__textarea textarea {
+  padding: 15px;
+  border-radius: 5px;
+  height: 120px;
+  border: 2px solid #e4e4e4;
+  font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #969696;
+}
+
+.content__textarea textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .footer {
   position: relative;
   background-color: #e4e4e4;
