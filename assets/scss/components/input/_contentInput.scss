@@ -1,0 +1,14 @@
+.content__input{
+    border: 2px solid $color-light-border;
+    width: 100%;
+    background-color: $color-white;
+    @include border-radius(5px);
+    padding: 8px 10px;                
+    color: $color-light-text;
+    @include font-OpenSansBold(12px);
+    font-weight: bold;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}

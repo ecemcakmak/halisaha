@@ -48,6 +48,15 @@
             }
 
         }
+        &.iletisim{
+            @include border-radius(5px);
+            padding: 40px;
+            background-color: $color-contactbackground;
+            border: 1px solid $color-border;
+            textarea{
+                height: 280px;
+            }
+        }
         &.bilgiler {
             display: block;
             .title {
