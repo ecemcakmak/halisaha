@@ -283,7 +283,7 @@
   border: 2px solid #e4e4e4;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: 12px 10px;
   color: #969696;
   font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -1260,11 +1260,12 @@ textarea {
 }
 
 .content__input {
+  margin-top: 25px;
   border: 2px solid #e4e4e4;
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: 12px 10px;
   color: #969696;
   font-family: 'OpenSans-Bold', Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -1284,14 +1285,14 @@ textarea {
 }
 
 .sidebar-right .title h3 {
-  margin-bottom: 27px;
+  margin-bottom: 15px;
   font-family: 'OpenSans-SemiBold', Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
 
 .sidebar__basic-info .title h3 {
-  margin-bottom: 27px;
+  margin-bottom: 15px;
   font-family: 'OpenSans-SemiBold', Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
