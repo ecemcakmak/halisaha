@@ -1,5 +1,7 @@
 .select-element{              
     select{
+        margin-top: 10px;
+        margin-bottom: 10px;
         border: 2px solid $color-light-border;
         background-color: $color-white;
         @include border-radius(5px);
