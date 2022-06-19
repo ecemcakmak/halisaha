@@ -1,16 +1,26 @@
-.content__input{
+.content__input {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px solid $color-light-border;
     width: 100%;
     background-color: $color-white;
     @include border-radius(5px);
-    padding: 12px 10px;                
-    color: $color-light-text;
-    @include font-OpenSansBold(12px);
+    color: $color-dark-text;
+    @include font-OpenSansBold(15px);
     font-weight: bold;
-    &:focus{
+    padding: 12px 10px;
+    &:hover{
+        border: 2px solid $color-brand;
+    }
+    &:focus {
         outline: none;
         box-shadow: none;
+        border: 2px solid $color-brand;
+    }
+
+    &::placeholder {
+        color: $color-input-text;
+        @include font-OpenSansBold(15px);
+        font-weight: bold;
     }
 }
