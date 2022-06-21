@@ -161,28 +161,30 @@
 
                             </div>
                             <div class="tab__container--content iletisim" id="Iletisim">
-                                <div class="row">                                
-                                    <div class="col-4">
-                                       
-                                            <input class="content__input input" type="text" id="Ad" name="Ad"
-                                            autocomplete="off" data-required="Adı alanını boş bıraktınız." placeholder="Ad">
-                                       
-                                    </div>
-                                    <div class="col-4">
-                                        <input class="content__input input" type="email" id="Email" name="Email"
-                                            autocomplete="off" data-required="E-Posta alanını boş bıraktınız." placeholder="E-Posta">
-                                    </div>
-                                    <div class="col-4">
-                                        <input class="content__input input" type="text" id="Konu" name="Konu"
-                                            autocomplete="off" data-required="Konu alanını boş bıraktınız." placeholder="Konu">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <div class="content__textarea">
-                                            <textarea name=""  id=""
-                                               ></textarea>
+                                <form action=""  id="registerForm">
+                                    <div class="row">                                
+                                        <div class="col-4">
+                                            <input class="content__input input" type="text" id="Ad" name="Ad" autocomplete="off"
+                                            data-required="Adı alanını boş bıraktınız." placeholder="Ad">
+                                           
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="content__input input" type="email" id="Email" name="Email"
+                                                autocomplete="off" data-required="E-Posta alanını boş bıraktınız." placeholder="E-Posta">
+                                        </div>
+                                        <div class="col-4">
+                                            <input class="content__input input" type="text" id="Konu" name="Konu"
+                                                autocomplete="off" data-required="Konu alanını boş bıraktınız." placeholder="Konu">
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <div class="content__textarea">
+                                                <textarea name=""  id=""
+                                                   ></textarea>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
+                                
                             </div>
                         </div>
                         <div class="slider__group">
@@ -670,6 +672,10 @@
     </footer>
     <script src="assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
+
+    <script src="assets/js/vendor/intl/js/intlTelInput.js"></script>
+    <script src="assets/js/vendor/validate/jquery.validate.min.js"></script>
     <script src="assets/js/vendor/owl/owl.carousel.min.js"></script>
     <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -746,6 +752,58 @@
             prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
             nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
 
+        });
+    </script>
+     <script>
+        const _registerForm = $("#registerForm");
+        const _Ad = $("#Ad");
+        const _Soyad = $("#Soyad");
+        const _KullaniciAdi = $("#KullaniciAdi");
+
+        _registerForm.validate({
+            onfocusout: function (element) {
+                {
+                    var currentObj = this;
+                    var currentElement = element;
+                    var delay = function () {
+                        currentObj.element(currentElement);
+                    };
+                    setTimeout(delay, 0);
+                }
+                var $el = $(element);
+                if (!$el.is("select") &&
+                    element.value === "" &&
+                    element.defaultValue === ""
+                ) {
+                    $el.valid();
+                    return;
+                }
+            },
+            ignore: [],
+            rules: {
+                Ad: {
+                    required: true,
+                },
+                Soyad: {
+                    required: true,
+                },
+                KullaniciAdi: {
+                    required: true,
+                },
+
+            },
+            messages: {
+                Ad: {
+                    required: _Ad.attr("data-required"),
+                },
+                Soyad: {
+                    required: _Soyad.attr("data-required"),
+                },
+                KullaniciAdi: {
+                    required: _KullaniciAdi.attr("data-required"),
+                },
+
+            }
         });
     </script>
 
