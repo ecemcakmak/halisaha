@@ -130,7 +130,7 @@
                         </div>
                         <div class="col-6">
                             <input class="content__input input" type="text" id="Soyad" name="Soyad" autocomplete="off"
-                                data-required="Adı alanını boş bıraktınız." placeholder="Soyad">
+                                data-required="Soyadı alanını boş bıraktınız." placeholder="Soyad">
                         </div>
                         <div class="col-6">
                             <input class="content__input input" type="text" id="DogumTarihi" name="DogumTarihi" autocomplete="off"
@@ -396,6 +396,8 @@
      <script>
         const _registerForm = $("#registerForm");
         const _Ad = $("#Ad");
+        const _Soyad = $("#Soyad");
+        const _KullaniciAdi = $("#KullaniciAdi");
 
         _registerForm.validate({
             onfocusout: function (element) {
@@ -421,12 +423,25 @@
                 Ad: {
                     required: true,
                 },
+                Soyad: {
+                    required: true,
+                },
+                KullaniciAdi: {
+                    required: true,
+                },
 
             },
             messages: {
                 Ad: {
                     required: _Ad.attr("data-required"),
-                }
+                },
+                Soyad: {
+                    required: _Soyad.attr("data-required"),
+                },
+                KullaniciAdi: {
+                    required: _KullaniciAdi.attr("data-required"),
+                },
+
             }
         });
     </script>
