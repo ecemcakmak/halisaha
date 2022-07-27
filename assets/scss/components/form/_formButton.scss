@@ -1,0 +1,6 @@
+.form-button{
+    @include flex;
+    width: 100%;
+    margin-top: 50px;
+    @include justify-content(end);
+}

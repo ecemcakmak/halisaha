@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="../assets/js/vendor/owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../assets/js/vendor/owl/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../assets/fonts/izmir/fonts.css">
-    <link rel="stylesheet" href="../assets/fonts/izmir/fonts.css">
     <link rel="stylesheet" href="../assets/scss/main.css">
+
+    <link rel="stylesheet" href="../assets/js/vendor/intl/css/intlTelInput.css">
+    <link rel="stylesheet" href="../assets/js/vendor/daterange/daterangepicker.css">
+
     <link rel="stylesheet" href="../assets/scss/vendor/rating/css-stars.css">
     <link rel="stylesheet" href="../assets/scss/vendor/rating/bootstrap-stars.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <title>Profil Güncelle</title>
 
@@ -123,13 +125,72 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-lg-8">
-                        <div class="content__title brand">
-                            <h3>Hesap Bilgilerim</h3>
+                        
+                        <div class="content__profile">
+                            <div class="content__title brand">
+                                <h3>Profil Güncelle</h3>
+                            </div>
+                        
                         </div>
-                    </div>
+                        <form action="" id="registerForm">
+                            <div class="row">                                                       
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="Ad" name="Ad" autocomplete="off"
+                                        data-required="Adı alanını boş bıraktınız." placeholder="Ad">
+                                </div>
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="Soyad" name="Soyad" autocomplete="off"
+                                        data-required="Soyadı alanını boş bıraktınız." placeholder="Soyad">
+                                </div>                                                          
+                                <div class="col-6">
+                                    <div class="select-element">
+                                        <div class="select-element">
+                                            <select required name="Sehir" id="Sehir" style="width: 100%">
+                                                <option value="" disabled selected>Şehir</option>
+                                                <option value="1">adana</option>
+                                                <option value="2">adıyaman</option>
+                                                <option value="2">afyon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="select-element">
+                                        <div class="select-element">
+                                            <select required name="Ilce" id="Ilce" style="width: 100%">
+                                                <option value="" disabled selected>İlçe</option>
+                                                <option value="1">...</option>
+                                                <option value="2">...2</option>
+                                                <option value="2">...3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="FacebookHesap" name="FacebookHesap" autocomplete="off"
+                                        data-required="Facebook Hesabı alanını boş bıraktınız." placeholder="Facebook Hesabı">
+                                </div>
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="TwitterHesap" name="TwitterHesap" autocomplete="off"
+                                        data-required="Twitter Hesabı alanını boş bıraktınız." placeholder="Twitter Hesabı">
+                                </div>
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="InstagramHesap" name="InstagramHesap" autocomplete="off"
+                                        data-required="Instagram Hesabı alanını boş bıraktınız." placeholder="Instagram Hesabı">
+                                </div>
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="GooglePlusHesap" name="GooglePlusHesap" autocomplete="off"
+                                        data-required="Google Plus Hesabı alanını boş bıraktınız." placeholder="Google Plus Hesabı">
+                                </div>
+                                <div class="col-12 form-button">
+                                    <button type="submit" class="button button__filled">
+                                        GÜNCELLE
+                                    </button>
+                                </div>
+                            </div>
+                        </form>                  
+                    </div> 
                     <div class="col-lg-4 pl-5">
                         <div class="sidebar__basic-info">
                             <div class="title">
@@ -160,8 +221,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                   
                 </div>
+            
             </div>
         </div>
     </main>
@@ -344,85 +406,11 @@
 
     <script src="../assets/js/vendor/intl/js/intlTelInput.js"></script>
     <script src="../assets/js/vendor/validate/jquery.validate.min.js"></script>
-    <script src="../assets/js/vendor/owl/owl.carousel.min.js"></script>
-    <script src="../assets/js/vendor/jquery/jquery.barrating.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        function videoInfo(evt, videoName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab__container--content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("button__blank");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace("active", "");
-            }
-            document.getElementById(videoName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 0,
-            center: true,
-            items: 1,
-            nav: false,
-            dots: false,
-        })
-    </script>
-    <script>
-        $(".detail-vote").barrating({
-            theme: "css-stars",
-            initialRating: null,
-        });
-        $('.match-member').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            variableWidth: true,
-            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
-            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
-
-        });
-        $('.match-goal').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            variableWidth: true,
-            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
-            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
-
-        });
-        $('.match-rescue').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            variableWidth: true,
-            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
-            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
-
-        });
-        $('.match-position').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            variableWidth: true,
-            prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icon/prev.svg'>",
-            nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icon/next.svg'>"
-
-        });
-    </script>
-    <script>
+    <script src="../assets/js/vendor/daterange/moment.min.js"></script>
+    <script src="../assets/js/vendor/daterange/daterangepicker.js"></script>
+    <script src="../assets/js/vendor/select2/select2.full.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+     <script>
         const _registerForm = $("#registerForm");
         const _Ad = $("#Ad");
         const _Soyad = $("#Soyad");
@@ -474,6 +462,7 @@
             }
         });
     </script>
+
 
 </body>
 

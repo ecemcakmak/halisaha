@@ -776,6 +776,14 @@ textarea {
   width: 100%;
 }
 
+.form-button {
+  display: -moz-flex;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: end;
+}
+
 .content__background {
   padding: 60px;
   position: relative;
