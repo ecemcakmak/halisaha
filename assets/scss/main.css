@@ -794,6 +794,18 @@ textarea {
   margin-top: 15px;
 }
 
+.form-constant .title {
+  color: #227f00;
+  font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.form-constant .text {
+  color: #bdbdbd;
+  font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
 .content__background {
   padding: 60px;
   position: relative;

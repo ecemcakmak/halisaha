@@ -1,0 +1,11 @@
+.form-constant{
+    .title{
+        color: $color-brand;
+        @include font-OpenSansSemiBold(15px);
+        margin-bottom: 15px;
+    }
+    .text{
+        color: $color-constant;
+        @include font-OpenSansSemiBold(15px);
+    }
+}

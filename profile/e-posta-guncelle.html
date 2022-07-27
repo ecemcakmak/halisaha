@@ -126,71 +126,45 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        
+
                         <div class="content__profile">
                             <div class="content__title brand">
-                                <h3>Profil Güncelle</h3>
+                                <h3>E-Posta Güncelle</h3>
                             </div>
-                        
+
                         </div>
                         <form action="" id="registerForm">
-                            <div class="row">                                                       
-                                <div class="col-md-6">
-                                    <input class="content__input input" type="text" id="Ad" name="Ad" autocomplete="off"
-                                        data-required="Adı alanını boş bıraktınız." placeholder="Ad">
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="content__input input" type="text" id="Soyad" name="Soyad" autocomplete="off"
-                                        data-required="Soyadı alanını boş bıraktınız." placeholder="Soyad">
-                                </div>                                                          
-                                <div class="col-md-6">
-                                    <div class="select-element">
-                                        <div class="select-element">
-                                            <select required name="Sehir" id="Sehir" style="width: 100%">
-                                                <option value="" disabled selected>Şehir</option>
-                                                <option value="1">adana</option>
-                                                <option value="2">adıyaman</option>
-                                                <option value="2">afyon</option>
-                                            </select>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-constant">
+                                        <div class="title">
+                                            <span>
+                                                Mevcut E-Posta
+                                            </span>                                            
+                                        </div>
+                                        <div class="text">
+                                            <span>
+                                                budakmahsun@gmail.com
+                                            </span>
                                         </div>
                                     </div>
+                                   
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="select-element">
-                                        <div class="select-element">
-                                            <select required name="Ilce" id="Ilce" style="width: 100%">
-                                                <option value="" disabled selected>İlçe</option>
-                                                <option value="1">...</option>
-                                                <option value="2">...2</option>
-                                                <option value="2">...3</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                                <div class="col-6">
+                                    <input class="content__input input" type="text" id="Eposta" name="Eposta"
+                                        autocomplete="off" data-required="E-Posta alanını boş bıraktınız."
+                                        placeholder="E-Posta">
                                 </div>
-                                <div class="col-md-6">
-                                    <input class="content__input input" type="text" id="FacebookHesap" name="FacebookHesap" autocomplete="off"
-                                        data-required="Facebook Hesabı alanını boş bıraktınız." placeholder="Facebook Hesabı">
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="content__input input" type="text" id="TwitterHesap" name="TwitterHesap" autocomplete="off"
-                                        data-required="Twitter Hesabı alanını boş bıraktınız." placeholder="Twitter Hesabı">
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="content__input input" type="text" id="InstagramHesap" name="InstagramHesap" autocomplete="off"
-                                        data-required="Instagram Hesabı alanını boş bıraktınız." placeholder="Instagram Hesabı">
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="content__input input" type="text" id="GooglePlusHesap" name="GooglePlusHesap" autocomplete="off"
-                                        data-required="Google Plus Hesabı alanını boş bıraktınız." placeholder="Google Plus Hesabı">
-                                </div>
+
+
                                 <div class="col-12 form-button">
                                     <button type="submit" class="button button__filled">
                                         GÜNCELLE
                                     </button>
                                 </div>
                             </div>
-                        </form>                  
-                    </div> 
+                        </form>
+                    </div>
                     <div class="col-lg-4 pl-5">
                         <div class="sidebar__basic-info">
                             <div class="title">
@@ -201,7 +175,7 @@
                                     <img src="../assets/images/icon/profile.png" alt="">
                                 </div>
                                 <div class="parts">
-                                    <a href="mesajlar.html" class="button button__blank active-blank">
+                                    <a href="mesajlar.html" class="button button__blank ">
                                         Mesajlar
                                     </a>
                                     <a href="#" class="button button__blank">
@@ -209,7 +183,7 @@
                                     </a>
                                     <a href="#" class="button button__blank">
                                         E-Posta Güncelle
-                                    </a> <a href="#" class="button button__blank">
+                                    </a> <a href="parola-guncelle.html" class="button button__blank active-blank">
                                         Parola Güncelle
                                     </a>
                                     </a> <a href="#" class="button button__blank">
@@ -221,9 +195,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
-            
+
             </div>
         </div>
     </main>
@@ -403,19 +377,19 @@
     <script src="../assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/js/vendor/jquery/jquery.barrating.min.js"></script>
-
+    <script src="../assets/js/vendor/inputmask/jquery.inputmask.min.js"></script>
     <script src="../assets/js/vendor/intl/js/intlTelInput.js"></script>
     <script src="../assets/js/vendor/validate/jquery.validate.min.js"></script>
     <script src="../assets/js/vendor/daterange/moment.min.js"></script>
     <script src="../assets/js/vendor/daterange/daterangepicker.js"></script>
     <script src="../assets/js/vendor/select2/select2.full.min.js"></script>
     <script src="../assets/js/main.js"></script>
-     <script>
-        const _registerForm = $("#registerForm");
-        const _Ad = $("#Ad");
-        const _Soyad = $("#Soyad");
-        const _KullaniciAdi = $("#KullaniciAdi");
+    <script>
 
+        const _Eposta = $("#Eposta");
+
+
+        HaliSaha.Module.emailMask(_Eposta);
         _registerForm.validate({
             onfocusout: function (element) {
                 {
@@ -437,28 +411,16 @@
             },
             ignore: [],
             rules: {
-                Ad: {
-                    required: true,
-                },
-                Soyad: {
-                    required: true,
-                },
-                KullaniciAdi: {
+                a: {
                     required: true,
                 },
 
             },
             messages: {
-                Ad: {
-                    required: _Ad.attr("data-required"),
+                Eposta: {
+                    required: _Eposta.attr("data-required"),
+                    email: _Eposta.attr("data-valid"),
                 },
-                Soyad: {
-                    required: _Soyad.attr("data-required"),
-                },
-                KullaniciAdi: {
-                    required: _KullaniciAdi.attr("data-required"),
-                },
-
             }
         });
     </script>
