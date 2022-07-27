@@ -4,3 +4,13 @@
     margin-top: 50px;
     @include justify-content(end);
 }
+
+.forget-password{
+    a{
+        color: $color-brand;
+        @include font-OpenSansExtraBold(15px);
+        @include flex;
+        @include justify-content(end);
+        margin-top:15px;
+    }
+}

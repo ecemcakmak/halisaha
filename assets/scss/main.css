@@ -784,6 +784,16 @@ textarea {
   justify-content: end;
 }
 
+.forget-password a {
+  color: #227f00;
+  font-family: "OpenSans-ExtraBold", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  display: -moz-flex;
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+
 .content__background {
   padding: 60px;
   position: relative;
