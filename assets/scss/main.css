@@ -700,7 +700,7 @@ textarea {
   font-weight: bold;
   border: 1px solid #ffffff;
   font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -717,8 +717,16 @@ textarea {
   background-color: #ffffff;
   color: #969696;
   font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
+}
+.button__blank:hover {
+  color: #227f00;
+  font-family: "OpenSans-ExtraBold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.button__blank.delete {
+  color: #c30000;
 }
 .button__blank.brand {
   color: #227f00;
@@ -726,6 +734,9 @@ textarea {
   font-size: 18px;
   font-weight: bold;
   width: 275px;
+}
+.button__blank.active-blank {
+  color: #227f00;
 }
 .container__header {
   display: -moz-flex;
@@ -1145,6 +1156,27 @@ textarea {
   font-family: "OpenSans-Medium", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #505050;
+}
+.sidebar__basic-info .body.profile {
+  background-color: #f9f9f9;
+}
+.sidebar__basic-info .body.profile .picture {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+.sidebar__basic-info .body.profile .picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sidebar__basic-info .body.profile .parts {
+  margin-top: 20px;
+}
+.sidebar__basic-info .body.profile .parts a {
+  margin-top: 15px;
 }
 
 .tab__container--content {
