@@ -1,0 +1,14 @@
+.content__checkbox{
+    &__info{
+        color:$color-checkbox-text ;
+        @include font-OpenSans(12px);
+        .bold{
+            color: $color-brand;
+            @include font-OpenSansBold(12px);
+        }
+        .thin{
+            color: $color-brand;
+            @include font-OpenSansThin(12px);
+        }
+    }
+}
