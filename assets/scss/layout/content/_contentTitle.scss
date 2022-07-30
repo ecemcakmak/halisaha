@@ -1,6 +1,6 @@
 .content__title{
     margin-bottom: 30px;
-    @include font-IzmirExtraBold(35px);
+    @include font-OpenSansBold(35px);
     color: $color-white;
     &.brand{
         h3 {

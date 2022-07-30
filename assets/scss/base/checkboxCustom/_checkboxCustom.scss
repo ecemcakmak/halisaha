@@ -1,12 +1,13 @@
 .input {
     display: inline;
     border: solid 2px black-border;
-    @include font-Izmir(14px !important);
+    @include font-OpenSansBold(14px !important);
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.8;
     letter-spacing: normal;
+    
     text-align: left;
     letter-spacing: 0px;
     &.is-valid-custom {
@@ -27,7 +28,7 @@
         margin-top: 0.25rem;
     }
     &::placeholder {
-        @include font-Izmir(14px);
+        @include font-OpenSansBold(14px);
         opacity: 0.6;
         font-weight: 600;
         font-stretch: normal;

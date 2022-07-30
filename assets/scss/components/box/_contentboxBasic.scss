@@ -30,12 +30,12 @@
         &__title{
             margin-top: 10px;
             h2{
-                @include font-IzmirExtraBold(20px);
+                @include font-OpenSansBold(22px);
                 color: $color-extradark-text !important;
             }
         }
         &__desc{
-            @include font-IzmirExtraBold(14px);
+       @include font-OpenSansBold(14px);
             color: $color-brand;
         }
     }

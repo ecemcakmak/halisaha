@@ -6,7 +6,7 @@
                 margin-bottom: 10px;
                 a {
                     text-decoration: none;
-                    @include font-IzmirMedium(16px);
+                    @include font-OpenSansSemiBold(16px);
                     @include flex();
                     @include align-items(center);
                     @include justify-content(end);
@@ -115,7 +115,7 @@
                     @include align-items(center);
                     margin-bottom: 10px;
                     h3 {
-                        @include font-IzmirBold(18px);
+                        @include font-OpenSansSemiBold(18px);
                         color: $color-extradark-text;
                         font-weight: bold;
                         margin-bottom: 0px;
@@ -124,7 +124,7 @@
                         margin-left: 5px;
                         color: $color-brand;
                         font-weight: bold;
-                        @include font-IzmirBold(18px);
+                        @include font-OpenSansSemiBold(18px);
                     }
                 }
                 .match-member {
@@ -250,7 +250,7 @@
                             display: block;
                             margin-bottom: 0px;
                             width: 100%;
-                            @include font-Izmir(16px);
+                            @include font-OpenSansBold(12px);
                             font-weight: bold;
                             font-stretch: normal;
                             font-style: normal;
@@ -258,7 +258,7 @@
                             letter-spacing: normal;
                         }
                         .author-comment {
-                            @include font-Izmir(12px);
+                            @include font-OpenSansBold(12px);
                             font-weight: 500;
                             font-stretch: normal;
                             font-style: normal;

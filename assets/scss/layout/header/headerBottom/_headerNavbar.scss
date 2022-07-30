@@ -19,7 +19,7 @@
                     cursor: pointer;
                     text-decoration: none;
                     color: $color-dark-text;
-                    @include font-IzmirSemiBold(16px);
+                    @include font-OpenSansSemiBold(16px);
                 }
                 ul{
                     position: absolute;
@@ -90,7 +90,7 @@
                             cursor: pointer;
                             text-decoration: none;
                             color: $color-dark-text;
-                            @include font-IzmirSemiBold(16px);
+                            @include font-OpenSansSemiBold(16px);
                         }
                         ul{
                             position: absolute;

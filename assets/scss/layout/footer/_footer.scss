@@ -19,7 +19,7 @@
             a{
                 text-decoration: none;
                 color: $color-dark-text;
-                @include font-IzmirSemiBold(13px);
+                @include font-OpenSansSemiBold(13px);
             }
         }
     }
@@ -31,7 +31,7 @@
           a{
               color: $color-dark-text;
               text-decoration: none;
-              @include font-IzmirMedium(12px);
+              @include font-OpenSansSemiBold(12px);
           }
             
         }
@@ -48,7 +48,7 @@
         background-color: $color-footer-darkbackground;
         span{
             color: $color-white;
-            @include font-IzmirSemiBold(16px);
+            @include font-OpenSansSemiBold(16px);
         }
     }
 }

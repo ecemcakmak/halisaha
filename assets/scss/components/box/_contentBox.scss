@@ -10,13 +10,14 @@
 
     &__title{
         h2{
-            @include font-IzmirExtraBold(22px);
+            @include font-OpenSansBold(22px);
             color: $color-brand;
         }
     }
     &__subtitle{
         h5{
-            @include font-IzmirExtraBold(16px);
+            
+            @include font-OpenSansSemiBold(16px);
             color: $color-brand;
         }
     }

@@ -63,11 +63,11 @@
             &__desc {
                 h6 {
                     margin-bottom: 0px;
-                    @include font-IzmirExtraBold(20px);
+                    @include font-OpenSansBold(14px);
                     color: $color-extradark-text;
                 }
-                span {
-                    @include font-IzmirExtraBold(14px);
+                span {                    
+                    @include font-OpenSansBold(14px);
                     color: $color-light-text;
                 }
             }

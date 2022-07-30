@@ -30,14 +30,14 @@
             right: 30px;
             z-index: 9999;
             color: $color-extradark-text;
-            @include font-IzmirExtraBold(20px);
+            @include font-OpenSansBold(20px);
         }
     }
     &__body {
         padding: 10px 15px;
         &__title {
             h5 {
-                @include font-IzmirExtraBold(20px);
+                @include font-OpenSansBold(20px);
                 color: $color-extradark-text;
             }
         }

@@ -23,12 +23,12 @@
       
         strong{
             color: $color-dark-text;
-            @include font-IzmirMedium(13px);
+            @include font-OpenSansSemiBold(13px);
           
         }
         span{
             color: $color-light-text;
-            @include font-IzmirMedium(14px);
+            @include font-OpenSansSemiBold(14px);
             
         }
         
