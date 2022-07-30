@@ -13,5 +13,6 @@
         @include box-shadow(0 4px 8px 0px rgba(83, 83, 83, 0.3));
         text-decoration: none;
         cursor: pointer;
+        color: $color-white;
     }
 }

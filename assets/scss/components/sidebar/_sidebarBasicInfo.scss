@@ -1,4 +1,9 @@
 .sidebar__basic-info {
+    order: 1;
+    padding-left: 0px;
+    @include mq(min, $xl){
+        padding-left: 50px;
+    }
     .title {
         h3 {
             margin-bottom: 15px;
