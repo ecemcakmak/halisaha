@@ -1,0 +1,51 @@
+.content__pagination {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include flex;
+    @include justify-content(center);
+
+    .pagination {
+        background-color: none;
+
+        a {
+            @include font-OpenSansBold(12px);
+            text-decoration: none;
+            padding: 10px 15px;
+            color: $color-pagination;
+
+            &:hover {
+                @include font-OpenSansBold(14px);
+                color: $color-white;
+                opacity: 0.8;
+            }
+
+            &.active {
+                @include font-OpenSansBold(14px);
+                color: $color-white;
+                opacity: 0.8;
+            }
+
+            @include font-IzmirSemiBold(14px);
+
+        }
+
+    }
+
+    .button {
+        text-decoration: none;
+        background-color: $color-pagination;
+        border: none;
+        padding: 10px 15px;
+        @include border-radius(5px);
+        margin-right: 10px;
+        margin-left: 10px;
+        color: $color-dark-text;
+        font-weight: 800;
+
+        &:hover {
+            color: $color-dark-text;
+
+        }
+
+    }
+}

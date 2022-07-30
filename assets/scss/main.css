@@ -3762,6 +3762,52 @@ template {
   color: #227f00;
 }
 
+.content__pagination {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: -moz-flex;
+  display: flex;
+  justify-content: center;
+}
+.content__pagination .pagination {
+  background-color: none;
+}
+.content__pagination .pagination a {
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #ababab;
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.content__pagination .pagination a:hover {
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.content__pagination .pagination a.active {
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.content__pagination .button {
+  text-decoration: none;
+  background-color: #ababab;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #505050;
+  font-weight: 800;
+}
+.content__pagination .button:hover {
+  color: #505050;
+}
+
 .content__filter {
   height: 160px;
   background-color: #629300;
