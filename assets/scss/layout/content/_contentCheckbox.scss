@@ -1,14 +1,13 @@
 .content__checkbox{
+    margin-top: 25px;
+    padding-left: 27px;
     &__info{
         color:$color-checkbox-text ;
-        @include font-OpenSans(12px);
+        @include font-OpenSansBold(12px);
+        text-decoration: none;
         .bold{
             color: $color-brand;
             @include font-OpenSansBold(12px);
-        }
-        .thin{
-            color: $color-brand;
-            @include font-OpenSansThin(12px);
         }
     }
 }

@@ -1167,6 +1167,326 @@ textarea {
   font-size: 16px;
 }
 
+.modal__kvkk {
+  /*modal efektleri*/
+  /*modal versiyonlar*/
+}
+.modal__kvkk-dialog {
+  transition: all 0.2s !important;
+  border-radius: 20px;
+}
+.modal__kvkk-header .close {
+  font-size: 18px;
+  cursor: pointer;
+}
+.modal__kvkk-header .close:focus {
+  outline: 0;
+}
+.modal__kvkk .drop-shadow {
+  box-shadow: 0 0 9px rgba(191, 191, 191, 0.36) !important;
+  -moz-box-shadow: 0 0 9px rgba(191, 191, 191, 0.36) !important;
+  -webkit-box-shadow: 0 0 9px rgba(191, 191, 191, 0.36) !important;
+}
+.modal__kvkk .modal-footer {
+  justify-content: center;
+  margin-top: 125px;
+}
+.modal__kvkk .modal-footer span {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: center;
+  color: #b3b3b3;
+}
+.modal__kvkk.fill-in .modal-dialog {
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.modal__kvkk.fade {
+  padding: 5px;
+  z-index: 999999;
+  opacity: 1 !important;
+}
+.modal__kvkk.fade.slide-down .modal-dialog {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  margin-top: -5px;
+}
+.modal__kvkk.fade.slide-down.show .modal-dialog {
+  transform: translate3d(0, 20%, 0);
+  -webkit-transform: translate3d(0, 20%, 0);
+  -moz-transform: translate3d(0, 20%, 0);
+  -o-transform: translate3d(0, 20%, 0);
+  -ms-transform: translate3d(0, 20%, 0);
+}
+.modal__kvkk.fade.slide-up {
+  height: 100%;
+  /*top: auto;*/
+}
+.modal__kvkk.fade.slide-up.show .modal-dialog {
+  transform: translate3d(0, 20%, 0);
+  -webkit-transform: translate3d(0, 20%, 0);
+  -moz-transform: translate3d(0, 20%, 0);
+  -o-transform: translate3d(0, 20%, 0);
+  -ms-transform: translate3d(0, 20%, 0);
+}
+.modal__kvkk.fade.slide-up.disable-scroll {
+  overflow: hidden;
+}
+.modal__kvkk.fade.slide-up .modal-dialog {
+  display: table;
+  height: 100%;
+  transform: translate3d(0, 75%, 0);
+  -webkit-transform: translate3d(0, 75%, 0);
+  -moz-transform: translate3d(0, 75%, 0);
+  -o-transform: translate3d(0, 75%, 0);
+  -ms-transform: translate3d(0, 75%, 0);
+}
+.modal__kvkk.fade.slide-up .modal-content-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal__kvkk.fade.fill-in > .close {
+  margin-top: 20px;
+  margin-right: 20px;
+  opacity: 0.6;
+}
+.modal__kvkk.fade.fill-in > .close > i {
+  font-size: 16px;
+}
+.modal__kvkk.fade.fill-in .modal-dialog {
+  display: table;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s;
+}
+@media (min-width: 421px) {
+  .modal__kvkk.fade.fill-in .modal-dialog {
+    top: 50%;
+    transform: translateY(-50%) !important;
+  }
+}
+.modal__kvkk.fade.fill-in .modal-content {
+  display: table-cell;
+  vertical-align: middle;
+  border: 0;
+  background: transparent;
+}
+.modal__kvkk.fade.fill-in .modal-content .modal-header {
+  border-bottom: 0;
+}
+.modal__kvkk.fade.fill-in.show .modal-dialog {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  background-color: rgb(255, 255, 255);
+}
+.modal__kvkk.fade.fill-in .modal-dialog {
+  opacity: 0;
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+}
+.modal__kvkk.fade.slide-right.show .modal-dialog {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+.modal__kvkk.fade.slide-right .modal-dialog {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  height: 100%;
+  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+}
+.modal__kvkk.fade.slide-right .modal-dialog .modal-content-wrapper,
+.modal__kvkk.fade.slide-right .modal-dialog .modal-content {
+  min-height: 100%;
+}
+.modal__kvkk.fade.slide-right .modal-content {
+  border-radius: 0;
+}
+.modal__kvkk.fade.slide-left.show .modal-dialog {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+.modal__kvkk.fade.slide-left .modal-dialog {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+}
+.modal__kvkk.fade.slide-left .modal-dialog .modal-content-wrapper,
+.modal__kvkk.fade.slide-left .modal-dialog .modal-content {
+  min-height: 100%;
+}
+.modal__kvkk.fade.slide-left .modal-content {
+  border-radius: 0;
+}
+.modal__kvkk.fade.full-width-modal {
+  transition-duration: 0s;
+}
+.modal__kvkk.fade.full-width-modal .modal-dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0;
+  transition: 0s;
+}
+.modal__kvkk.fade.full-width-modal .modal-dialog .modal-content {
+  width: 100vw;
+  height: 100%;
+}
+.modal__kvkk.small .modal-header {
+  padding: 0px;
+}
+.modal__kvkk.small .modal-dialog {
+  transition: all 0.2s !important;
+  border-radius: 20px;
+  max-width: 430px;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.modal__kvkk.small.show .modal-dialog {
+  opacity: 1;
+  transform: translate3d(0, 50%, 0);
+  -webkit-transform: translate3d(0, 50%, 0);
+  -moz-transform: translate3d(0, 50%, 0);
+  -o-transform: translate3d(0, 50%, 0);
+  -ms-transform: translate3d(0, 50%, 0);
+  background-color: rgb(255, 255, 255);
+}
+.modal__kvkk.small .modal-content {
+  padding: 10px 10px;
+}
+@media (min-width: 421px) {
+  .modal__kvkk.small .modal-content {
+    padding: 10px 30px;
+  }
+}
+.modal__kvkk.small .modal-content .close {
+  z-index: 99999;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #b3b3b3;
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 38px;
+}
+.modal__kvkk.small .modal-content .close:hover {
+  color: #b3b3b3;
+}
+@media (max-width: 420px) {
+  .modal__kvkk.small .modal-content .modal-body .title {
+    text-align: center;
+  }
+  .modal__kvkk.small .modal-content .modal-body .title h1 {
+    font-family: "Izmir-Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .modal__kvkk.small .modal-content .modal-body .content label {
+    line-height: 1.2;
+  }
+}
+.modal__kvkk.medium .modal-header {
+  padding: 10px 10px;
+}
+.modal__kvkk.medium .modal-dialog {
+  transition: all 0.2s !important;
+  border-radius: 9px;
+  max-width: 720px;
+}
+.modal__kvkk.medium.show .modal-dialog {
+  opacity: 1;
+  transform: translate3d(0, 50%, 0);
+  -webkit-transform: translate3d(0, 50%, 0);
+  -moz-transform: translate3d(0, 50%, 0);
+  -o-transform: translate3d(0, 50%, 0);
+  -ms-transform: translate3d(0, 50%, 0);
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.modal__kvkk.medium .modal-content {
+  padding: 10px 10px;
+}
+.modal__kvkk.medium .modal-content .close {
+  z-index: 99999;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #b3b3b3;
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 38px;
+}
+.modal__kvkk.medium .modal-content .close:hover {
+  color: #b3b3b3;
+}
+.modal__kvkk.medium .modal-content .modal-body {
+  max-height: 490px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media (max-width: 420px) {
+  .modal__kvkk.medium .modal-content .modal-body .title {
+    text-align: center;
+  }
+  .modal__kvkk.medium .modal-content .modal-body .title h1 {
+    font-family: "Izmir-Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .modal__kvkk.medium .modal-content .modal-body .content label {
+    line-height: 1.2;
+  }
+}
+.modal__kvkk.medium .modal-content .modal-footer {
+  margin-top: 0px;
+}
+@media (min-width: 769px) {
+  .modal__kvkk.medium .modal-content .modal-footer {
+    display: -moz-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .modal__kvkk.medium .modal-content .modal-footer button {
+    width: 40%;
+  }
+}
+
 .container__header {
   display: -moz-flex;
   display: flex;
@@ -3381,13 +3701,20 @@ template {
   z-index: -9;
 }
 
+.content__checkbox {
+  margin-top: 25px;
+  padding-left: 27px;
+}
 .content__checkbox__info {
   color: #757575;
   font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
   font-size: 12px;
+  text-decoration: none;
 }
 .content__checkbox__info .bold {
   color: #227f00;
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 
 .content__title {
@@ -3410,6 +3737,46 @@ template {
   display: -moz-flex;
   display: flex;
   align-items: center;
+}
+
+.content__form__item {
+  margin-top: 20px;
+}
+.content__form__item.captcha {
+  width: 100%;
+  display: -moz-flex;
+  display: flex;
+  justify-content: center;
+}
+.content__form__item.captcha img {
+  display: block;
+  margin: 0 auto;
+}
+.content__form__kvkk input {
+  margin-right: 7px;
+}
+.content__form__kvkk label {
+  position: relative;
+  color: #757575 !important;
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 12px !important;
+}
+.content__form__kvkk .bold {
+  color: #227f00;
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.content__form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.content__form__input:focus {
+  outline: none;
 }
 
 .content__textarea textarea {
