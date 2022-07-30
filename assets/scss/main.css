@@ -1585,6 +1585,20 @@ textarea {
   display: -moz-flex;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .loginbottom {
+    flex-direction: row;
+  }
+}
+.loginbottom .rememberMe {
+  margin-bottom: 25px;
+}
+@media (min-width: 769px) {
+  .loginbottom .rememberMe {
+    margin-bottom: 0px;
+  }
 }
 
 .form-constant .title {
@@ -1718,7 +1732,7 @@ textarea {
   color: #227f00;
 }
 .content__box__text p {
-  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #505050;
 }
@@ -1953,14 +1967,9 @@ textarea {
 
 .sidebar__basic-info {
   order: 1;
-  padding-left: 0px;
-}
-@media (min-width: 1201px) {
-  .sidebar__basic-info {
-    padding-left: 50px;
-  }
 }
 .sidebar__basic-info .title h3 {
+  padding-left: 0px;
   margin-bottom: 15px;
   font-family: "OpenSans-SemiBold", Arial, Helvetica, sans-serif;
   font-size: 24px;

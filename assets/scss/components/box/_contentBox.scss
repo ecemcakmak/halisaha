@@ -23,7 +23,7 @@
     }
     &__text{
         p{
-            @include font-IzmirSemiBold(16px);
+            @include font-OpenSansSemiBold(16px);
             color: $color-dark-text; 
         }
     }

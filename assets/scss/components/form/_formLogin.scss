@@ -1,4 +1,15 @@
 .loginbottom{
     @include flex;
     @include justify-content(space-between);
+    flex-direction: column;
+    @include mq(min, $md){
+        flex-direction: row;
+    }
+    .rememberMe{
+        margin-bottom: 25px;
+        @include mq(min, $md){
+            margin-bottom: 0px;
+        }
+        
+    }
 }
