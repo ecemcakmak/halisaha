@@ -1,6 +1,9 @@
 .content__filter {
-    height: 160px;
+    height: 250px;
     background-color: #629300;
     @include flex;
     align-items: center;
+    @include mq(min, $xl){
+        height: 160px;
+    }
 }
