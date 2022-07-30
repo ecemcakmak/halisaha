@@ -243,10 +243,10 @@
                         </div>
                         <div class="col-12 content__form__item">
                             <div class="content__form__kvkk">
-                                <input type="checkbox" class="input" name="kvkkCheckBox" id="kvkkCheckBox"
+                                <input type="checkbox" class="input" name="modaliletisimCheckBox" id="modaliletisimCheckBox"
                                     data-check="KVVK alanını boş bıraktınız." data-required="KVKK sözleşmesini onayladıktan
                                     sonra kayıt olabilirsiniz." />
-                                <label class="custom-control-label " for="kvkkCheckBox">
+                                <label class="custom-control-label " for="maciletisimCheckBox">
                                     Kişisel verilerimin<strong class="bold">Ticari İletişim KVK Aydınlatma Metni</strong>’nde açıklandığı üzere
                                     kampanya, tanıtım, pazar araştırması ve kişiye özel pazarlama faaliyetleri
                                     amaçlarıyla işlenmesine ve Sosyal Halı Saha’nın bu amaçlarla tarafım ile e-posta,
@@ -554,6 +554,61 @@
         </div>
     </div>
 </div>
+<div class="modal fade fill-in medium modal__kvkk" id="modalIletisim" tabindex="-1" role="dialog"
+aria-labelledby="Kvkk Metnini Oku" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="kvkkModalTitle">KVKK ONAYLAMA METNİ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
+                augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
+                augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
+                augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
+                augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+                egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="button button__blank" data-dismiss="modal" aria-label="Close"
+                id="modalIletisimtCancel">Kabul Etmiyorum</button>
+            <button type="button" class="button button__filled" id="modalIletisimtConfirm">Kabul Ediyorum</button>
+        </div>
+    </div>
+</div>
+</div>
     <script src="assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/vendor/jquery/jquery.barrating.min.js"></script>
@@ -585,7 +640,7 @@
             _modalKvkk.modal("hide");
             _formIletisim.valid();
         });
-
+        //maç kayıtları için aydınlatma metni
         _mackayitCheckBox.on("click", function (e) {
             if (e.currentTarget.checked) {
                 _modalMacKayitlari.modal("show");
@@ -598,6 +653,9 @@
             _modalMacKayitlari.modal("hide");
             _formIletisim.valid();
         });
+
+        //iletişim kvvk için aydınlatma metni
+
     </script>
     <script>
         const dropdownSearch = (element) => {
