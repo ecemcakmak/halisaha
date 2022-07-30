@@ -204,6 +204,427 @@
   text-decoration: none;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  -webkit-box-shadow: 0px;
+}
+
+h1 {
+  font-family: "Izmir-Bold", Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  color: blac;
+  margin: 0px;
+}
+
+p {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  margin-bottom: 0px;
+}
+
+.mid {
+  display: -moz-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.dynamic-content .form-button {
+  margin-bottom: 15px;
+}
+.dynamic-content .form-button .button--large-m {
+  padding: 9px 24px;
+}
+.dynamic-content .form-excel {
+  margin-bottom: 10px;
+}
+.dynamic-content .form-excel .button--large-f {
+  margin-top: 0px;
+  padding: 5px 24px;
+}
+.dynamic-content__desc {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.dynamic-content__desc p {
+  line-height: 1.5;
+}
+
+label {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  margin-bottom: 0px;
+}
+
+input {
+  padding-left: 24px;
+  height: 45px;
+}
+input:focus {
+  outline: 0px;
+  box-shadow: none;
+}
+input::-moz-placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+input:-ms-input-placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+input::placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+select {
+  padding-left: 24px;
+  height: 45px;
+}
+select:focus {
+  outline: 0px;
+  box-shadow: none !important;
+}
+select::-moz-placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+select:-ms-input-placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+select::placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  padding-left: 24px;
+  height: 45px;
+}
+textarea:focus {
+  outline: 0px;
+  box-shadow: none !important;
+}
+textarea::-moz-placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+textarea:-ms-input-placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+textarea::placeholder {
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.hide-overflow {
+  overflow: hidden;
+  margin-right: 7px;
+}
+
+.select2-container--open {
+  z-index: 9999999999;
+}
+
+.select2-selection__clear {
+  z-index: 99999999;
+}
+
+.iti__flag-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: initial !important;
+  padding: 0px;
+  left: -19px;
+}
+
+.iti input,
+.iti input[type=text],
+.iti input[type=tel] {
+  position: relative;
+  z-index: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 35px;
+  margin-right: 0;
+  padding-left: 35px;
+}
+
+.table td,
+.table th {
+  padding: 0.55rem;
+}
+
+.table-remove-border td {
+  border: 0px !important;
+  padding: 0.75rem;
+}
+.table-remove-border th {
+  border-top: 0px !important;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.title-element h3 {
+  font-family: "Izmir-ExtraBold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4f4f4f;
+}
+
+.max350 {
+  max-width: 350px;
+  width: 100%;
+}
+
+.max500 {
+  max-width: 500px;
+  width: 100%;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #d8d8d8;
+  background-color: #d8d8d8;
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.material-radio .custom-control-label:before {
+  top: 10px;
+}
+
+.max-300 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.input {
+  display: inline;
+  border: solid 2px black-border;
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 14px !important;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  letter-spacing: 0px;
+}
+.input.is-valid-custom {
+  border-color: #28a745;
+  padding-right: calc(1.5em + 0.75rem);
+}
+.input.is-invalid-custom {
+  border-color: rgb(218, 66, 66);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+.input.select2-selection.error, .input.is-invalid {
+  border-color: rgb(218, 66, 66) !important;
+}
+.input ~ .invalid-feedback {
+  color: rgb(218, 66, 66);
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.input::-moz-placeholder {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+.input:-ms-input-placeholder {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+.input::placeholder {
+  font-family: "Izmir", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+.input:focus {
+  outline: none;
+}
+.input[type*=text] {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input[type*=email] {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input[type*=tel] {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input[type*=search] {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input[type*=number] {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input[type*=password] {
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+.input[type*=checkbox] {
+  position: absolute;
+  height: 24px;
+  opacity: 0;
+}
+.input[type*=checkbox]:hover {
+  cursor: pointer;
+}
+.input[type*=checkbox] ~ label {
+  color: rgb(91, 91, 91);
+  line-height: 1.7;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  padding-left: 30px;
+  padding-top: 3px;
+  outline: none;
+}
+.input[type*=checkbox] ~ label:hover {
+  cursor: pointer;
+}
+.input[type*=checkbox] ~ label:after {
+  background-image: none;
+}
+.input[type*=checkbox] ~ label:before {
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(91, 91, 91);
+  background-image: none !important;
+  background-color: transparent;
+  outline: none;
+  left: 0;
+}
+.input[type*=checkbox]:checked ~ label {
+  color: rgb(91, 91, 91);
+}
+.input[type*=checkbox]:checked ~ label:after {
+  background-color: none;
+  background-image: none;
+}
+.input[type*=checkbox]:checked ~ label:before {
+  background-color: rgb(0, 176, 68);
+  border: 1px solid rgb(0, 176, 68);
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 0 0 3px #ffffff inset;
+  box-sizing: border-box;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+.input-group .form-control {
+  box-shadow: none;
+}
+.input-group .form-control:focus {
+  outline: none;
+}
+.input-group input {
+  color: gray;
+}
+
 .select-element select {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -738,6 +1159,14 @@ textarea {
 .button__blank.active-blank {
   color: #227f00;
 }
+.button__forget {
+  background-color: #ffffff;
+  border: none;
+  color: #227f00;
+  font-family: "OpenSans-Bold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 .container__header {
   display: -moz-flex;
   display: flex;
@@ -783,6 +1212,12 @@ textarea {
   margin-top: 50px;
   justify-content: end;
 }
+.form-button.mid {
+  display: -moz-flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 .forget-password a {
   color: #227f00;
@@ -792,6 +1227,12 @@ textarea {
   display: flex;
   justify-content: end;
   margin-top: 15px;
+}
+
+.loginbottom {
+  display: -moz-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-constant .title {

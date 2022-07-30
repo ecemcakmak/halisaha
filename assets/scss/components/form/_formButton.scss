@@ -3,6 +3,11 @@
     width: 100%;
     margin-top: 50px;
     @include justify-content(end);
+    &.mid{
+        @include flex;
+        @include justify-content(center);
+        text-align: center;
+    }
 }
 
 .forget-password{

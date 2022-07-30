@@ -1,0 +1,6 @@
+.button__forget{
+    background-color: $color-white;
+    border: none;
+    color: $color-brand;
+    @include font-OpenSansBold(16px);
+}

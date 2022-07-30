@@ -7,6 +7,8 @@
 
 @import "base/animation",
 "base/breadcrumb",
+"base/base",
+"base/checkboxCustom/checkboxCustom",
 "base/select",
 "base/textarea",
 "base/customCol";
@@ -14,9 +16,11 @@
 
 @import "components/button/buttonFilled",
 "components/button/buttonBlank",
+"components/button/buttonForget",
 "components/container/containerHeader",
 "components/form/formFilter",
 "components/form/formButton",
+"components/form/formLogin",
 "components/form/formConstant",
 "components/background/contentBackground",
 "components/box/contentboxPoint",
