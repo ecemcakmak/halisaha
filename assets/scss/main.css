@@ -2999,6 +2999,7 @@ textarea {
 
 .box__row {
   margin-bottom: 50px;
+  min-height: calc(100vh - 350px);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
